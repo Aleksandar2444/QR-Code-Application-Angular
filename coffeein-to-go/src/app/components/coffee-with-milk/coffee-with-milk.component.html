@@ -1,0 +1,14 @@
+<div class="coffee_container">
+  <button class="button_two">Кафе со млеко / Coffee with milk</button>
+  <div *ngFor="let coffee of coffeeWithMilk" class="coffee_card">
+    <div class="name_and_price_wrapper">
+      <h3>{{ coffee.name }}</h3>
+      <p>
+        <strong>{{ coffee.price }}</strong>
+      </p>
+    </div>
+    <div class="description_wrapper">
+      <p>{{ coffee.description }}</p>
+    </div>
+  </div>
+</div>
