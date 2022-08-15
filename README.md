@@ -1,2 +1,2 @@
-# QR-Code-Application ☕
-QR Code application for coffee shop
+# QR-Code-Application 
+QR Code application for coffee shop ☕
