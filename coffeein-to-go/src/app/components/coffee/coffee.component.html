@@ -1,5 +1,6 @@
 <div class="coffee_container">
-  <button>Кафе / Coffee</button>
+  <button (click)="OpenEntity()">Кафе / Coffee</button>
+  <div *ngIf="toggle">
   <div *ngFor="let coffee of coffee" class="coffee_card">
     <div class="name_and_price_wrapper">
       <h3>{{ coffee.name }}</h3>
@@ -15,4 +16,5 @@
     <p>* додаток веганско млеко +20ден.</p>
     <p>* безкофеинско кафе +20ден.</p>
   </div>
+</div>
 </div>

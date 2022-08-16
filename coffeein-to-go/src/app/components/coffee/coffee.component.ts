@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Coffee } from 'src/app/interfaces/coffee';
 
 @Component({
@@ -7,6 +7,8 @@ import { Coffee } from 'src/app/interfaces/coffee';
   styleUrls: ['./coffee.component.scss'],
 })
 export class CoffeeComponent implements OnInit {
+
+
   public coffee: Coffee[] = [
     {
       name: 'Espresso Classico',
@@ -54,7 +56,17 @@ export class CoffeeComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(
 
-  ngOnInit(): void {}
+  ) {}
+   toggle :boolean = false
+
+  ngOnInit(): void {
+
+
+  }
+
+  OpenEntity() {
+    this.toggle = !this.toggle;
+  }
 }

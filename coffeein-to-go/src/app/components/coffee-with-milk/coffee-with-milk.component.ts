@@ -62,5 +62,14 @@ export class CoffeeWithMilkComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  toggle :boolean = false
+
+  ngOnInit(): void {
+
+
+  }
+
+  OpenEntity() {
+    this.toggle = !this.toggle;
+  }
 }
