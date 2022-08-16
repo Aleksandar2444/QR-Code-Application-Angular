@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Coffee } from 'src/app/interfaces/coffee';
+import { Entity } from 'src/app/interfaces/coffee';
 
 @Component({
   selector: 'coffee-with-milk',
@@ -7,7 +7,7 @@ import { Coffee } from 'src/app/interfaces/coffee';
   styleUrls: ['./coffee-with-milk.component.css'],
 })
 export class CoffeeWithMilkComponent implements OnInit {
-  public coffeeWithMilk: Coffee[] = [
+  public coffeeWithMilk: Entity[] = [
     {
       name: 'Macchiato',
       price: '70ден.',
@@ -62,7 +62,7 @@ export class CoffeeWithMilkComponent implements OnInit {
 
   constructor() {}
 
-  toggle :boolean = false
+  toggle :boolean = false;
 
   ngOnInit(): void {
 

@@ -1,5 +1,5 @@
-export interface Coffee {
+export interface Entity {
   name: string;
-  description: string;
+  description?: string;
   price: string;
 }

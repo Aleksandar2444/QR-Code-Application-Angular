@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { Coffee } from 'src/app/interfaces/coffee';
+import { Entity } from 'src/app/interfaces/coffee';
 
 @Component({
   selector: 'coffee',
@@ -9,7 +9,7 @@ import { Coffee } from 'src/app/interfaces/coffee';
 export class CoffeeComponent implements OnInit {
 
 
-  public coffee: Coffee[] = [
+  public coffee: Entity[] = [
     {
       name: 'Espresso Classico',
       price: '60ден.',
