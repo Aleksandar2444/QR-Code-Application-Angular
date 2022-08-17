@@ -21,3 +21,147 @@
 .alchocol_name {
   font-weight: normal;
 }
+
+.beerCss {
+  background-color: #a55270b0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.martiniCss {
+  background-color: hsla(281, 42%, 59%, 0.69);
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.digestifsCss {
+  background-color: #5f2e40b0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.ginCss {
+  background-color: #4973ceb0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.rumCss {
+  background-color: #adaf3fb0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.liquerCss {
+  background-color: #e0d88bb0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.vodkaCss {
+  background-color: #d8d0d3b0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.cognacCss {
+  background-color: #9c9a1eb0;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.brandyCss {
+  background-color: #d5e9a0d3;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.tequilaCss {
+  background-color: #c2b4b9ee;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.whiskeyCss {
+  background-color: #caaa4088;
+
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: cursive;
+}
+

@@ -3,21 +3,31 @@
     Алкохолни Пијалоци / Alcoholic Drinks
   </button>
   <!-- *Beer container -->
-  <div *ngIf="toggle">
-    <p class="alchocol_type">Пиво / Beer</p>
+  <div *ngIf="toggle" style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%;">
+    <!-- <p class="alchocol_type">Пиво / Beer</p> -->
+    <br>
+    <div style="width: 50%;">
+      <button class="beerCss" (click)="ToggleBeers()">Пиво / Beer</button>
+      <div *ngIf="toggleBeer">
     <div *ngFor="let drink of beer" class="coffee_card">
-      <div class="name_and_price_wrapper">
+      <div class="name_and_price_wrapper" style="width: 90%;">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
         <p>
-          <strong>{{ drink.price }}</strong>
+              <strong>{{ drink.price }}</strong>
         </p>
       </div>
       <div class="description_wrapper">
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
+
     <!-- *Martini container -->
-    <p class="alchocol_type">Мартини / Martini</p>
+    <!-- <p class="alchocol_type">Мартини / Martini</p> -->
+    <br>
+    <br>
+    <button class="martiniCss" (click)="ToggleMartinis()">Мартини / Martini</button>
+    <div *ngIf="toggleMartini">
     <div *ngFor="let drink of martini" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -29,8 +39,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Digestifs container -->
-    <p class="alchocol_type">Дигестиви / Digestifs</p>
+    <!-- <p class="alchocol_type">Дигестиви / Digestifs</p> -->
+    <br>
+    <br>
+    <button class="digestifsCss" (click)="ToggleDigestives()">Дигестиви / Digestifs</button>
+    <div *ngIf="toggleDigest">
     <div *ngFor="let drink of digestifs" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -42,8 +57,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Gin container -->
-    <p class="alchocol_type">Џин / Gin</p>
+    <!-- <p class="alchocol_type">Џин / Gin</p> -->
+    <br>
+    <br>
+    <button class="ginCss" (click)="ToggleGins()">Џин / Gin</button>
+    <div *ngIf="toggleGin">
     <div *ngFor="let drink of gin" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -55,8 +75,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Rum container -->
-    <p class="alchocol_type">Рум / Rum</p>
+    <!-- <p class="alchocol_type">Рум / Rum</p> -->
+    <br>
+    <br>
+    <button class="rumCss" (click)="ToggleRums()">Рум / Rum</button>
+    <div *ngIf="toggleRum">
     <div *ngFor="let drink of rum" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -68,8 +93,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Liquers container -->
-    <p class="alchocol_type">Ликери / Liquers</p>
+    <!-- <p class="alchocol_type">Ликери / Liquers</p> -->
+    <br>
+    <br>
+    <button class="liquerCss" (click)="ToggleLiquers()">Ликери / Liquers</button>
+    <div *ngIf="toggleLiquer">
     <div *ngFor="let drink of liquers" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -81,8 +111,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Vodka container -->
-    <p class="alchocol_type">Вотка / Vodka</p>
+    <!-- <p class="alchocol_type">Вотка / Vodka</p> -->
+    <br>
+    <br>
+    <button class="vodkaCss" (click)="ToggleVodkas()">Вотка / Vodka</button>
+    <div *ngIf="toggleVodka">
     <div *ngFor="let drink of vodka" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -94,8 +129,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Cognac container -->
-    <p class="alchocol_type">Коњак / Cognac</p>
+    <!-- <p class="alchocol_type">Коњак / Cognac</p> -->
+    <br>
+    <br>
+    <button class="cognacCss" (click)="ToggleCognacs()">Коњак / Cognac</button>
+    <div *ngIf="toggleCognac">
     <div *ngFor="let drink of cognac" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -107,8 +147,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Brandy container -->
-    <p class="alchocol_type">Бренди / Brandy</p>
+    <!-- <p class="alchocol_type">Бренди / Brandy</p> -->
+    <br>
+    <br>
+    <button class="brandyCss" (click)="ToggleBrandys()">Бренди / Brandy</button>
+    <div *ngIf="toggleBrendi">
     <div *ngFor="let drink of brandy" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -120,8 +165,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Tequila container -->
-    <p class="alchocol_type">Текила / Tequila</p>
+    <!-- <p class="alchocol_type">Текила / Tequila</p> -->
+    <br>
+    <br>
+    <button class="tequilaCss" (click)="ToggleTequilas()">Текила / Tequila</button>
+    <div *ngIf="toggleTequila">
     <div *ngFor="let drink of tequila" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -133,8 +183,13 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
     <!-- *Whisk(e)y container -->
-    <p class="alchocol_type">Виски / Whisk(e)y</p>
+    <!-- <p class="alchocol_type">Виски / Whisk(e)y</p> -->
+    <br>
+    <br>
+    <button class="whiskeyCss" (click)="ToggleWhiskies()">Виски / Whisk(e)y</button>
+    <div *ngIf="toggleWhiskey">
     <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
     <div *ngFor="let drink of whisky" class="coffee_card">
       <div class="name_and_price_wrapper">
@@ -186,5 +241,7 @@
         <p>{{ drink.description }}</p>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 </div>
