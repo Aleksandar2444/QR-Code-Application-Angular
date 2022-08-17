@@ -1,0 +1,190 @@
+<div class="coffee_container">
+  <button class="button" (click)="OpenEntity()">
+    Алкохолни Пијалоци / Alcoholic Drinks
+  </button>
+  <!-- *Beer container -->
+  <div *ngIf="toggle">
+    <p class="alchocol_type">Пиво / Beer</p>
+    <div *ngFor="let drink of beer" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Martini container -->
+    <p class="alchocol_type">Мартини / Martini</p>
+    <div *ngFor="let drink of martini" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Digestifs container -->
+    <p class="alchocol_type">Дигестиви / Digestifs</p>
+    <div *ngFor="let drink of digestifs" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Gin container -->
+    <p class="alchocol_type">Џин / Gin</p>
+    <div *ngFor="let drink of gin" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Rum container -->
+    <p class="alchocol_type">Рум / Rum</p>
+    <div *ngFor="let drink of rum" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Liquers container -->
+    <p class="alchocol_type">Ликери / Liquers</p>
+    <div *ngFor="let drink of liquers" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Vodka container -->
+    <p class="alchocol_type">Вотка / Vodka</p>
+    <div *ngFor="let drink of vodka" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Cognac container -->
+    <p class="alchocol_type">Коњак / Cognac</p>
+    <div *ngFor="let drink of cognac" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Brandy container -->
+    <p class="alchocol_type">Бренди / Brandy</p>
+    <div *ngFor="let drink of brandy" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Tequila container -->
+    <p class="alchocol_type">Текила / Tequila</p>
+    <div *ngFor="let drink of tequila" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Whisk(e)y container -->
+    <p class="alchocol_type">Виски / Whisk(e)y</p>
+    <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
+    <div *ngFor="let drink of whisky" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Irish Whiskey container -->
+    <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
+    <div *ngFor="let drink of irishWhisky" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *Bourbon container -->
+    <p class="alchocol_type">Бурбон Виски / Bourbon Whiskey</p>
+    <div *ngFor="let drink of bourbonWhisky" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+    <!-- *American container -->
+    <p class="alchocol_type">Американско Виски / American Whiskey</p>
+    <div *ngFor="let drink of americanWhisky" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3 class="alchocol_name">{{ drink.name }}</h3>
+        <p>
+          <strong>{{ drink.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ drink.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Entity } from 'src/app/interfaces/coffee';
 
 @Component({
-  selector: 'coffee-with-milk',
+  selector: 'app-coffee-with-milk',
   templateUrl: './coffee-with-milk.component.html',
   styleUrls: ['./coffee-with-milk.component.css'],
 })
@@ -62,12 +62,9 @@ export class CoffeeWithMilkComponent implements OnInit {
 
   constructor() {}
 
-  toggle :boolean = false;
+  toggle: boolean = false;
 
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void {}
 
   OpenEntity() {
     this.toggle = !this.toggle;

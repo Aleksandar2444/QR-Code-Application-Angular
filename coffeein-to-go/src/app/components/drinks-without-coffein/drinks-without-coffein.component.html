@@ -1,9 +1,9 @@
 <div class="coffee_container">
   <button class="button" (click)="OpenEntity()">
-    Природни Сокови / Fresh Juices
+    Напитоци без Кофеин / Drinks without Coffein
   </button>
   <div *ngIf="toggle">
-    <div *ngFor="let drink of freshJuices" class="coffee_card">
+    <div *ngFor="let drink of drinksWithoutCoffein" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ drink.name }}</h3>
         <p>

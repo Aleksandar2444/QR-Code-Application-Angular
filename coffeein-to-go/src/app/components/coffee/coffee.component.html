@@ -1,20 +1,22 @@
 <div class="coffee_container">
-  <button (click)="OpenEntity()">Кафе / Coffee</button>
+  <button (click)="OpenEntity()">
+    <span style="color: white">Кафе</span> / Coffee
+  </button>
   <div *ngIf="toggle">
-  <div *ngFor="let coffee of coffee" class="coffee_card">
-    <div class="name_and_price_wrapper">
-      <h3>{{ coffee.name }}</h3>
-      <p>
-        <strong>{{ coffee.price }}</strong>
-      </p>
+    <div *ngFor="let coffee of coffee" class="coffee_card">
+      <div class="name_and_price_wrapper">
+        <h3>{{ coffee.name }}</h3>
+        <p>
+          <strong>{{ coffee.price }}</strong>
+        </p>
+      </div>
+      <div class="description_wrapper">
+        <p>{{ coffee.description }}</p>
+      </div>
     </div>
-    <div class="description_wrapper">
-      <p>{{ coffee.description }}</p>
+    <div class="supplements">
+      <p>* додаток веганско млеко +20ден.</p>
+      <p>* безкофеинско кафе +20ден.</p>
     </div>
   </div>
-  <div class="supplements">
-    <p>* додаток веганско млеко +20ден.</p>
-    <p>* безкофеинско кафе +20ден.</p>
-  </div>
-</div>
 </div>

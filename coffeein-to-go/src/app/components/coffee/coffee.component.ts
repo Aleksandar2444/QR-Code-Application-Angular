@@ -1,14 +1,12 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Entity } from 'src/app/interfaces/coffee';
 
 @Component({
-  selector: 'coffee',
+  selector: 'app-coffee',
   templateUrl: './coffee.component.html',
   styleUrls: ['./coffee.component.scss'],
 })
 export class CoffeeComponent implements OnInit {
-
-
   public coffee: Entity[] = [
     {
       name: 'Espresso Classico',
@@ -56,15 +54,11 @@ export class CoffeeComponent implements OnInit {
     },
   ];
 
-  constructor(
+  constructor() {}
 
-  ) {}
-   toggle :boolean = false
+  toggle: boolean = false;
 
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void {}
 
   OpenEntity() {
     this.toggle = !this.toggle;
