@@ -10,6 +10,9 @@ import { DrinksWithoutCoffeinComponent } from './components/drinks-without-coffe
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { AlchocolDrinksComponent } from './components/alchocol-drinks/alchocol-drinks.component';
 import { CocktailsComponent } from './components/cocktails/cocktails.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +25,9 @@ import { CocktailsComponent } from './components/cocktails/cocktails.component';
     BreakfastComponent,
     AlchocolDrinksComponent,
     CocktailsComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

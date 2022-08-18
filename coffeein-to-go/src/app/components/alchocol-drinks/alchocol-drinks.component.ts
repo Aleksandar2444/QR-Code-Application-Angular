@@ -285,7 +285,7 @@ export class AlchocolDrinksComponent implements OnInit {
 
   constructor() {}
 
-  toggle: boolean = false;
+
   toggleBeer: boolean = false;
   toggleMartini: boolean = false;
   toggleDigest: boolean = false;
@@ -300,9 +300,7 @@ export class AlchocolDrinksComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  OpenEntity() {
-    this.toggle = !this.toggle;
-  }
+
 
   ToggleBeers() {
     this.toggleBeer = !this.toggleBeer;

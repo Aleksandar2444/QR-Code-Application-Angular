@@ -1,3 +1,11 @@
+.app_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 101px;
+}
 .coffee_container button {
   // background-color: #dfa55eb0;
   // background-image: url("https://st2.depositphotos.com/5329014/10797/v/950/depositphotos_107975332-stock-illustration-coffee-color-background.jpg");

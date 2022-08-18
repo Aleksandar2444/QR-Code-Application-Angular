@@ -1,8 +1,8 @@
-.button {
-  /* background-color: #6ab7bbb2; */
+ .button {
+  background-color: #6ab7bbb2;
   /* background-image: url("https://cdn.shopify.com/s/files/1/0262/8403/2084/articles/a52685ea41c821da0388dec916b2f408_large.jpg?v=1606011695"); */
   /* background-image: url("https://as2.ftcdn.net/v2/jpg/03/46/22/71/1000_F_346227153_A9wEXuPlT2vX9PdFU9RiAkZFlgk8Z59Z.jpg"); */
-  background-image: url("../../images/non-alchocolic.jpg");
+  background-image: url("../../../assets/images/non-alchocolic.jpg");
   opacity: 0.95;
   width: 100%;
   height: 75px;
@@ -14,3 +14,4 @@
   font-family: cursive;
   color: whitesmoke;
 }
+

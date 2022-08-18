@@ -1,6 +1,9 @@
 <div class="coffee_container">
-  <button (click)="OpenEntity()">COCKTAILS</button>
-  <div *ngIf="toggle">
+  <!-- <button (click)="OpenEntity()">COCKTAILS</button> -->
+  <button class="button" routerLink="/home">
+    Назад / Back
+  </button>
+  <div>
     <div *ngFor="let drink of cocktails" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ drink.name }}</h3>
@@ -13,4 +16,7 @@
       </div>
     </div>
   </div>
+  <button class="button" routerLink="/home">
+    Назад / Back
+  </button>
 </div>

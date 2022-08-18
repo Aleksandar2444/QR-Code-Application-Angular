@@ -1,9 +1,13 @@
 <div class="coffee_container">
-  <button class="button" (click)="OpenEntity()">
+  <!-- <button class="button" (click)="OpenEntity()">
     Алкохолни Пијалоци / Alcoholic Drinks
+  </button> -->
+  <button class="button" routerLink="/home">
+    Назад / Back
   </button>
+  <br>
   <!-- *Beer container -->
-  <div *ngIf="toggle" style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%;">
     <!-- <p class="alchocol_type">Пиво / Beer</p> -->
     <br>
     <div style="width: 50%;">
@@ -244,4 +248,8 @@
   </div>
   </div>
   </div>
+  <br>
+  <button class="button" routerLink="/home">
+    Назад / Back
+  </button>
 </div>

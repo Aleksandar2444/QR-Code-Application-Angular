@@ -1,8 +1,8 @@
 <div class="coffee_container">
-  <button class="button" (click)="OpenEntity()">
-    Breakfast at Coffee In from 09:30h - 12:00h
+  <button class="button" routerLink="/home">
+    Назад / Back
   </button>
-  <div *ngIf="toggle">
+  <div>
     <div *ngFor="let food of breakfast" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ food.name }}</h3>
@@ -15,4 +15,7 @@
       </div>
     </div>
   </div>
+  <button class="button" routerLink="/home">
+    Назад / Back
+  </button>
 </div>

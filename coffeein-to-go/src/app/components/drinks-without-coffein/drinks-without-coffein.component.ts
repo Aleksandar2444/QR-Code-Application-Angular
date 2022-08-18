@@ -21,11 +21,8 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
 
   constructor() {}
 
-  toggle: boolean = false;
+
 
   ngOnInit(): void {}
 
-  OpenEntity() {
-    this.toggle = !this.toggle;
-  }
 }
