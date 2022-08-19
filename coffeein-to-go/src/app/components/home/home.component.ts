@@ -4,17 +4,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  public year = new Date().getFullYear();
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) {}
 
-
-
-  ngOnInit(): void {
-  }
-
-
-
+  ngOnInit(): void {}
 }
