@@ -9,7 +9,7 @@
 
 .app_container h1 {
   font-size: 45px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   letter-spacing: 3px;
 }
 
@@ -184,6 +184,28 @@
   padding-top: 40px;
 }
 
+.call_now {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+.call_now a {
+  height: 30px;
+  width: 100px;
+  font-size: 18px;
+  background-color: #343a40;
+  border-color: #343a40;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
 @media only screen and (min-width: 730px) {
   .button5 {
     background-repeat: no-repeat;
@@ -241,9 +263,21 @@
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 600px) {
   .footer {
-    font-size: 20px;
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .footer {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+  .footer {
+    font-size: 15px;
   }
 }
 
