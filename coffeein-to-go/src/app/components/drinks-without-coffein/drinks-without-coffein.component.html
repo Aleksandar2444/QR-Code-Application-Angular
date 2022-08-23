@@ -5,7 +5,7 @@
   <button class="button" routerLink="/home">
     Назад / Back
   </button>
-  <div>
+  <div *ngIf="!cocktailBool">
     <div *ngFor="let drink of drinksWithoutCoffein" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ drink.name }}</h3>
@@ -18,6 +18,15 @@
       </div>
     </div>
   </div>
+<div class="weekend_container" *ngIf="cocktailBool">
+  <p>Не служиме кафе после 21:00 часот Петок и Сабота</p>
+  <hr />
+  <p>We do not serve coffee after 21:00h Friday and Saturday</p>
+  <div>
+    <p>Cocktail Night</p>
+    <img src="../../../assets/images/cocktails2.jpg" alt="sorry.jpg" routerLink="/coctails" />
+  </div>
+</div>
   <button class="button" routerLink="/home">
     Назад / Back
   </button>
