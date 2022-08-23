@@ -238,10 +238,13 @@
   .app_home {
     display: none;
   }
+  .social_links {
+    padding: 0;
+  }
   .error_img {
     display: block;
     width: auto;
-    min-height: 100vh;
+    min-height: 80vh;
   }
   .error_img img {
     width: 100%;

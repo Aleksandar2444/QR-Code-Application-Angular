@@ -7,6 +7,14 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./coffee.component.scss'],
 })
 export class CoffeeComponent implements OnInit {
+  public coffeeDay: string | number = new Date().toLocaleString('en-us', {
+    weekday: 'long',
+  });
+  public coffeeTime: string | number = new Date().toLocaleString('en-US', {
+    hour: 'numeric',
+    hour12: true,
+  });
+
   public coffee: Entity[] = [
     {
       name: 'Espresso Classico',
@@ -56,9 +64,8 @@ export class CoffeeComponent implements OnInit {
 
   constructor() {}
 
-
-
-  ngOnInit(): void {}
-
-
+  ngOnInit(): void {
+    console.log(this.coffeeTime);
+    console.log(this.coffeeDay);
+  }
 }
