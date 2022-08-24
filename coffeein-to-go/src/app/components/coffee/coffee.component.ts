@@ -7,12 +7,10 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./coffee.component.scss'],
 })
 export class CoffeeComponent implements OnInit {
+  public coffeeBool: boolean = false;
+  public cocktailBool: boolean = false;
 
-
-  public coffeeBool:boolean = false;
-  public cocktailBool:boolean = false;
-
-  public today:Date = new Date();
+  public today: Date = new Date();
 
   public coffee: Entity[] = [
     {
@@ -64,23 +62,19 @@ export class CoffeeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-
     let ninePm = new Date();
-    ninePm.setHours(21,0,0);
+    ninePm.setHours(21, 0, 0);
+
     let fiveAm = new Date();
     fiveAm.setDate(fiveAm.getDate() + 1);
-    fiveAm.setHours(5,0,0);
+    fiveAm.setHours(5, 0, 0);
 
-
-    if(this.today.getDay() === 5 || this.today.getDay() === 6) {
-
-      if(this.today >= ninePm && this.today < fiveAm) {
+    if (this.today.getDay() === 5 || this.today.getDay() === 6) {
+      if (this.today >= ninePm && this.today < fiveAm) {
         this.cocktailBool = true;
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
     }
-
   }
 }

@@ -1,6 +1,6 @@
 .button {
-  /* background-color: #acc74c; */
-  background-image: url("https://static2.bigstockphoto.com/9/3/3/large1500/339103954.jpg");
+  background: linear-gradient(to top right, #9933ff 0%, #33cc33 100%);
+  /* background-image: url("https://static2.bigstockphoto.com/9/3/3/large1500/339103954.jpg"); */
   width: 100%;
   height: 75px;
   border: none;
@@ -9,6 +9,4 @@
   letter-spacing: 2px;
   cursor: pointer;
   font-family: cursive;
-  color: whitesmoke;
-  font-weight: bold;
 }
