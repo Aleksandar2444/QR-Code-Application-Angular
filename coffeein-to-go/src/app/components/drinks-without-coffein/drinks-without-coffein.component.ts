@@ -33,44 +33,36 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
   ngOnInit(): void {
 
 
-
-    console.log(this.today);
+    // this.today.setDate(this.today.getDate() - 4);
+    // this.today.setHours(6,0,0);
+    // console.log(this.today);
 
     const today = new Date();
     const first = today.getDate() - today.getDay() + 1;
 
-    const fifth = first + 2;
+    const fifth = first + 4;
     const friday = new Date(today.setDate(fifth));
 
 
 
-    const sixth = first + 3;
+    const sixth = first + 5;
     const saturday = new Date(today.setDate(sixth));
 
+    const seventh = first + 6
+    const sunday = new Date(today.setDate(seventh));
 
 
-  console.log(friday);
-  console.log(saturday);
+
+  // console.log(friday);
+  // console.log(saturday);
+  // console.log(sunday);
 
 
-    // let testDate = new Date();
-    // testDate.setHours(21,0,0);
 
-    // let testDate2 = new Date();
-    // testDate2.setDate(testDate.getDate() + 1)
-    // testDate2.setHours(5,0,0);
 
-    if(this.today.getDate()=== friday.getDate() || this.today.getDate() === saturday.getDate() ) {
+    if(this.today.getDate()=== friday.getDate()) {
 
       friday.setHours(21,0,0);
-
-      if(this.today.getDate() === saturday.getDate()) {
-
-
-
-        saturday.setDate(saturday.getDate() + 1);
-      }
-
       saturday.setHours(5,0,0);
 
       if(this.today > friday && this.today < saturday) {
@@ -81,103 +73,40 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
         this.cocktailBool = false;
       }
     }
+    else if (this.today.getDate() === saturday.getDate()) {
+
+      if(this.today.getHours() > 4) {
+        saturday.setHours(21,0,0);
+        sunday.setHours(5,0,0);
+      }
+      else {
+        this.cocktailBool = true;
+        return;
+      }
 
 
+      if(this.today > saturday && this.today < sunday) {
+        this.cocktailBool = true;
 
+      }
+      else {
+        this.cocktailBool = false;
+      }
+    }
+    else if (this.today.getDate() === sunday.getDate()) {
+      sunday.setHours(5,0,0)
 
+      if(this.today < sunday) {
+        this.cocktailBool = true;
+      }
+      else {
+        this.cocktailBool = false;
+      }
+    }
+    else {
+      this.cocktailBool = false;
+    }
 
-    console.log(this.today);
-    console.log(this.today.getDay());
-
-
-    // if(this.today.getDay() === 3) {
-
-    //   let fridayninePm = new Date();
-    //   fridayninePm.setHours(21,0,0);
-    //   let saturdayfiveAm = new Date();
-    //   saturdayfiveAm.setDate(saturdayfiveAm.getDate() + 1);
-    //   saturdayfiveAm.setHours(5,0,0);
-
-    //   console.log(fridayninePm);
-    //   console.log(saturdayfiveAm);
-
-    //   let friday2Am = new Date();
-    //   friday2Am.setHours(2,0,0);
-
-
-
-    //   if(this.today < friday2Am) {
-    //     this.cocktailBool = true;
-    //     return;
-
-    //   }
-
-
-    //   if(this.today >= fridayninePm && this.today < saturdayfiveAm) {
-    //     this.cocktailBool = true;
-    //   }
-    //   else {
-    //     this.cocktailBool = false;
-    //   }
-    // }
-    // else if(this.today.getDay() === 6) {
-
-    //   // let saturday12Am = new Date();
-    //   // saturday12Am.setHours(24,0,0);
-
-
-
-
-
-    //   let saturdayNinePm = new Date();
-    //   // saturdayNinePm.setDate(saturdayNinePm.getDate() + 1);
-    //   saturdayNinePm.setHours(21,0,0);
-    //   let sundayFiveAm = new Date();
-
-    //   sundayFiveAm.setDate(sundayFiveAm.getDate() + 1);
-    //   sundayFiveAm.setHours(5,0,0);
-
-    //   let saturday2Am = new Date();
-    //   saturday2Am.setHours(2,0,0);
-
-
-    //   if(this.today < saturday2Am) {
-    //     this.cocktailBool = true;
-    //     return;
-
-    //   }
-
-
-
-    //   if(this.today >= saturdayNinePm && this.today < sundayFiveAm) {
-
-    //     this.cocktailBool = true;
-
-    //   }
-    //   else {
-
-    //     this.cocktailBool = false;
-    //   }
-
-    // }
-    // else if(this.today.getDay() === 0) {
-
-    //   let sundayFiveAm = new Date();
-    //   sundayFiveAm.setHours(5,0,0);
-
-    //   console.log(sundayFiveAm);
-
-
-    //   if(this.today < sundayFiveAm) {
-
-    //     this.cocktailBool = true;
-    //   }
-    //   else {
-
-    //     this.cocktailBool = false;
-    //   }
-
-    // }
   }
 
 }
