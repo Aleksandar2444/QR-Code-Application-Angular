@@ -1,11 +1,5 @@
 .button {
-  /* background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%); */
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
-
-  /* background-image: url("https://i.pinimg.com/736x/23/d4/c6/23d4c69fcdaff871dbc6269fd4129b30.jpg"); */
-  /* background-image: url("https://img.freepik.com/free-vector/watercolor-alcohol-ink-background_23-2149232016.jpg?w=2000"); */
-  /* background-repeat: no-repeat;
-  background-size: 100%; */
   width: 100%;
   height: 75px;
   border: none;
@@ -13,7 +7,6 @@
   font-size: 22px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   color: white;
 }
 
@@ -36,7 +29,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin: 15px 0;
 }
 
@@ -49,7 +41,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -62,7 +53,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -76,7 +66,6 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
-  font-family: cursive;
 }
 
 .rumCss {
@@ -89,7 +78,6 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
-  font-family: cursive;
 }
 
 .liquerCss {
@@ -102,7 +90,6 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
-  font-family: cursive;
 }
 
 .vodkaCss {
@@ -114,7 +101,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -127,7 +113,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -140,7 +125,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -153,7 +137,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-bottom: 15px;
 }
 
@@ -166,7 +149,6 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
   margin-top: 15px;
 }
 

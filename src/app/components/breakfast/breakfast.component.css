@@ -1,6 +1,4 @@
 .button {
-  /* background: linear-gradient(to top right, #9933ff 0%, #33cc33 100%); */
-  /* background-image: url("https://static2.bigstockphoto.com/9/3/3/large1500/339103954.jpg"); */
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   color: white;
   width: 100%;
@@ -10,7 +8,6 @@
   font-size: 22px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
 }
 
 .promotionClass {

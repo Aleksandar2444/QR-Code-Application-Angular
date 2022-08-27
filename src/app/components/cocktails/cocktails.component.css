@@ -1,8 +1,4 @@
 .coffee_container button {
-  /* background-color: #eb53cab0; */
-  /* background-image: url("../../../assets/images/cocktails1.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   color: white;
   width: 100%;
@@ -13,5 +9,4 @@
   font-weight: 600;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
 }
