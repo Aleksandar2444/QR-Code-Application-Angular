@@ -16,11 +16,13 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
 
   public drinksWithoutCoffein: Entity[] = [
     {
+      id: 1,
       name: 'Чај',
       price: '70ден.',
       description: '(билен или овошен, прашај персонал)',
     },
     {
+      id: 2,
       name: 'Топло Чоколадо / Warm Chocolate',
       price: '90ден.',
     },

@@ -9,11 +9,13 @@ import { Entity } from 'src/app/interfaces/coffee';
 export class BreakfastComponent implements OnInit {
   public breakfast: Entity[] = [
     {
+      id: 1,
       name: 'Breakfast combo',
       price: '220ден.',
       description: 'Coffee / Tea + Fresh Juice + Croissant / Spinach pie',
     },
     {
+      id: 2,
       name: 'Комбинација за појадок',
       price: '220ден.',
       description: 'Кафе / Чај + Цеден сок + Кроасан / Пита со спанаќ',
