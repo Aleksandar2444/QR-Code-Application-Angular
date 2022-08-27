@@ -9,6 +9,7 @@ import { Entity } from 'src/app/interfaces/coffee';
 export class CoffeeComponent implements OnInit {
   public coffeeBool: boolean = false;
   public cocktailBool: boolean = false;
+  public promotionPriceBool: boolean = false;
 
   public today: Date = new Date();
 
@@ -67,12 +68,24 @@ export class CoffeeComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     // this.today.setDate(this.today.getDate() + 4);
     // this.today.setHours(0,1,0);
     // console.log(this.today);
+
+    this.coffee.forEach(element => {
+      if (element.promotion) {
+        element.id = -1;
+        element.id++;
+
+
+        this.promotionPriceBool = true;
+      }
+    });
+
+    this.coffee.sort((a, b) => a.id - b.id);
 
     const today = new Date();
     const first = today.getDate() - today.getDay() + 1;

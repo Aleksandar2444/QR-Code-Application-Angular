@@ -16,6 +16,16 @@
   font-family: cursive;
 }
 
+.promotionClass {
+
+
+  text-decoration-line: line-through;
+}
+
+.promotionClass2 {
+  color: #000000;
+}
+
 @media only screen and (max-width: 800px) {
   .button {
     background-repeat: no-repeat;

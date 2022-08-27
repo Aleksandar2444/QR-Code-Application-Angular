@@ -8,9 +8,9 @@ import { Entity } from 'src/app/interfaces/coffee';
 })
 export class CoffeeWithMilkComponent implements OnInit {
 
-  public cocktailBool:boolean = false;
+  public cocktailBool: boolean = false;
 
-  public today:Date = new Date();
+  public today: Date = new Date();
 
   public promotionPriceBool: boolean = false;
 
@@ -62,7 +62,7 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '110ден.',
       description:
         '(игра помеѓу кафе и млеко, каде што доминира вкусот на дупло еспресо)',
-        promotion: false
+      promotion: false
     },
     {
       id: 8,
@@ -70,7 +70,7 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '90ден.',
       description:
         '(дозволи ова комбинација на чоколадо, млеко и кафе да ти го подобри денот)',
-        promotion: true
+      promotion: true
     },
     {
       id: 9,
@@ -81,7 +81,7 @@ export class CoffeeWithMilkComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
 
 
@@ -94,16 +94,16 @@ export class CoffeeWithMilkComponent implements OnInit {
 
 
     this.coffeeWithMilk.forEach(element => {
-      if(element.promotion) {
+      if (element.promotion) {
         element.id = -1;
         element.id++;
 
-        element.price = ''
+
         this.promotionPriceBool = true;
       }
     });
 
-    this.coffeeWithMilk.sort((a,b) => a.id - b.id);
+    this.coffeeWithMilk.sort((a, b) => a.id - b.id);
 
 
     const today = new Date();
@@ -122,19 +122,19 @@ export class CoffeeWithMilkComponent implements OnInit {
 
 
 
-  // console.log(friday);
-  // console.log(saturday);
-  // console.log(sunday);
+    // console.log(friday);
+    // console.log(saturday);
+    // console.log(sunday);
 
 
 
 
-    if(this.today.getDate()=== friday.getDate()) {
+    if (this.today.getDate() === friday.getDate()) {
 
-      friday.setHours(21,0,0);
-      saturday.setHours(5,0,0);
+      friday.setHours(21, 0, 0);
+      saturday.setHours(5, 0, 0);
 
-      if(this.today > friday && this.today < saturday) {
+      if (this.today > friday && this.today < saturday) {
 
         this.cocktailBool = true;
       }
@@ -144,9 +144,9 @@ export class CoffeeWithMilkComponent implements OnInit {
     }
     else if (this.today.getDate() === saturday.getDate()) {
 
-      if(this.today.getHours() > 4) {
-        saturday.setHours(21,0,0);
-        sunday.setHours(5,0,0);
+      if (this.today.getHours() > 4) {
+        saturday.setHours(21, 0, 0);
+        sunday.setHours(5, 0, 0);
       }
       else {
         this.cocktailBool = true;
@@ -154,7 +154,7 @@ export class CoffeeWithMilkComponent implements OnInit {
       }
 
 
-      if(this.today > saturday && this.today < sunday) {
+      if (this.today > saturday && this.today < sunday) {
         this.cocktailBool = true;
 
       }
@@ -163,9 +163,9 @@ export class CoffeeWithMilkComponent implements OnInit {
       }
     }
     else if (this.today.getDate() === sunday.getDate()) {
-      sunday.setHours(5,0,0)
+      sunday.setHours(5, 0, 0)
 
-      if(this.today < sunday) {
+      if (this.today < sunday) {
         this.cocktailBool = true;
       }
       else {
