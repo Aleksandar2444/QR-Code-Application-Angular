@@ -7,8 +7,11 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./non-alcoholic-drinks.component.css'],
 })
 export class NonAlcoholicDrinksComponent implements OnInit {
+
+  public promotionPriceBool: boolean = false;
   public nonAlcoholicDrinks: Entity[] = [
-    {id: 1,
+    {
+      id: 1,
       name: 'Вода Роса / Rosa Water',
       price: '50ден.',
     },
@@ -64,11 +67,24 @@ export class NonAlcoholicDrinksComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
   toggle: boolean = false;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+    this.nonAlcoholicDrinks.forEach(element => {
+      if (element.promotion) {
+        element.id = -1;
+        element.id++;
+
+
+        this.promotionPriceBool = true;
+      }
+    });
+
+    this.nonAlcoholicDrinks.sort((a, b) => a.id - b.id);
+  }
 
   OpenEntity() {
     this.toggle = !this.toggle;

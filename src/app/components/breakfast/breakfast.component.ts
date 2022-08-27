@@ -7,6 +7,9 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./breakfast.component.css'],
 })
 export class BreakfastComponent implements OnInit {
+
+  public promotionPriceBool: boolean = false;
+
   public breakfast: Entity[] = [
     {
       id: 1,
@@ -19,13 +22,28 @@ export class BreakfastComponent implements OnInit {
       name: 'Комбинација за појадок',
       price: '220ден.',
       description: 'Кафе / Чај + Цеден сок + Кроасан / Пита со спанаќ',
+      promotion: true,
+      promotionPrice: '190ден.'
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+    this.breakfast.forEach(element => {
+      if (element.promotion) {
+        element.id = -1;
+        element.id++;
+
+
+        this.promotionPriceBool = true;
+      }
+    });
+
+    this.breakfast.sort((a, b) => a.id - b.id);
+  }
 
 
 }

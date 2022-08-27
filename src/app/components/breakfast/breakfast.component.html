@@ -7,7 +7,10 @@
       <div class="name_and_price_wrapper">
         <h3>{{ food.name }}</h3>
         <p>
-          <strong>{{ food.price }}</strong>
+          <strong [ngClass]="(food.promotionPrice) ? 'promotionClass' : 'promotionClass2'">{{
+            food.price }}</strong>
+
+          <strong *ngIf="promotionPriceBool">{{ food.promotionPrice }}</strong>
         </p>
       </div>
       <div class="description_wrapper">
