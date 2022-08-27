@@ -70,7 +70,6 @@ export class CoffeeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-
     // this.today.setDate(this.today.getDate() + 4);
     // this.today.setHours(0,1,0);
     // console.log(this.today);
@@ -81,69 +80,49 @@ export class CoffeeComponent implements OnInit {
     const fifth = first + 4;
     const friday = new Date(today.setDate(fifth));
 
-
-
     const sixth = first + 5;
     const saturday = new Date(today.setDate(sixth));
 
-    const seventh = first + 6
+    const seventh = first + 6;
     const sunday = new Date(today.setDate(seventh));
 
+    // console.log(friday);
+    // console.log(saturday);
+    // console.log(sunday);
 
+    if (this.today.getDate() === friday.getDate()) {
+      friday.setHours(21, 0, 0);
+      saturday.setHours(5, 0, 0);
 
-  // console.log(friday);
-  // console.log(saturday);
-  // console.log(sunday);
-
-
-
-
-    if(this.today.getDate()=== friday.getDate()) {
-
-      friday.setHours(21,0,0);
-      saturday.setHours(5,0,0);
-
-      if(this.today > friday && this.today < saturday) {
-
+      if (this.today > friday && this.today < saturday) {
         this.cocktailBool = true;
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else if (this.today.getDate() === saturday.getDate()) {
-
-      if(this.today.getHours() > 4) {
-        saturday.setHours(21,0,0);
-        sunday.setHours(5,0,0);
-      }
-      else {
+    } else if (this.today.getDate() === saturday.getDate()) {
+      if (this.today.getHours() > 4) {
+        saturday.setHours(21, 0, 0);
+        sunday.setHours(5, 0, 0);
+      } else {
         this.cocktailBool = true;
         return;
       }
 
-
-      if(this.today > saturday && this.today < sunday) {
+      if (this.today > saturday && this.today < sunday) {
         this.cocktailBool = true;
-
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else if (this.today.getDate() === sunday.getDate()) {
-      sunday.setHours(5,0,0)
+    } else if (this.today.getDate() === sunday.getDate()) {
+      sunday.setHours(5, 0, 0);
 
-      if(this.today < sunday) {
+      if (this.today < sunday) {
         this.cocktailBool = true;
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else {
+    } else {
       this.cocktailBool = false;
     }
-
   }
 }
