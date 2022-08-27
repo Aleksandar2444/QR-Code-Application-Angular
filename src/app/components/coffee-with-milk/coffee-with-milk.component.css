@@ -1,6 +1,4 @@
 .button {
-  /* background-color: #eea755; */
-  /* background-image: url("https://image.shutterstock.com/z/stock-photo-glasses-of-latte-macchiato-coffee-on-a-wooden-background-1850181274.jpg"); */
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   color: white;
   width: 100%;
@@ -10,7 +8,6 @@
   font-size: 22px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: cursive;
 }
 
 .weekend_container div p {
