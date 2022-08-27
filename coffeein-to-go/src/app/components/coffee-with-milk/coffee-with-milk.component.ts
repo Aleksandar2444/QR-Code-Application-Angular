@@ -12,56 +12,72 @@ export class CoffeeWithMilkComponent implements OnInit {
 
   public today:Date = new Date();
 
+  public promotionPriceBool: boolean = false;
+
   public coffeeWithMilk: Entity[] = [
     {
+      id: 1,
       name: 'Macchiato',
       price: '70ден.',
       description: '(совршена голтка еспресо потопена во кремасто млеко)',
     },
     {
+      id: 2,
       name: 'Macchiato Doppio',
       price: '110ден.',
       description:
         '(за подолго уживање, дупла доза на еспресо и кремасто млеко)',
     },
     {
+      id: 3,
       name: 'Freddo Cappucino',
       price: '80ден.',
       description:
         '(претходно изладено еспресо послушено врз коцки лед и пена)',
     },
     {
+      id: 4,
       name: 'Freddo Cappucino Doppio',
       price: '140ден.',
       description:
         '(претходно изладено еспресо послушено врз коцки лед и пена)',
     },
     {
+      id: 5,
       name: 'Latte',
       price: '90ден.',
       description: '(еспресо во кое ќе доминира богата доза млеко и пена)',
+      promotion: true,
+      promotionPrice: '70ден'
     },
     {
+      id: 6,
       name: 'Espresso con Pana',
       price: '70ден.',
       description: '(еспресо со додаток на домашен млечен крем)',
     },
     {
+      id: 7,
       name: 'Flat White',
       price: '110ден.',
       description:
         '(игра помеѓу кафе и млеко, каде што доминира вкусот на дупло еспресо)',
+        promotion: false
     },
     {
+      id: 8,
       name: 'Mocha',
       price: '90ден.',
       description:
         '(дозволи ова комбинација на чоколадо, млеко и кафе да ти го подобри денот)',
+        promotion: true
     },
     {
+      id: 9,
       name: 'Irish Original',
       price: '200ден.',
       description: '(ирско виски, ирски крем, млеко и спресо шот)',
+      promotion: true
     },
   ];
 
@@ -74,6 +90,21 @@ export class CoffeeWithMilkComponent implements OnInit {
     // this.today.setDate(this.today.getDate() + 4);
     // this.today.setHours(13,1,0);
     // console.log(this.today);
+
+
+
+    this.coffeeWithMilk.forEach(element => {
+      if(element.promotion) {
+        element.id = -1;
+        element.id++;
+
+        element.price = ''
+        this.promotionPriceBool = true;
+      }
+    });
+
+    this.coffeeWithMilk.sort((a,b) => a.id - b.id);
+
 
     const today = new Date();
     const first = today.getDate() - today.getDay() + 1;
