@@ -1,16 +1,20 @@
 <div class="coffee_container">
-  <button class="button" routerLink="/home">
-    Назад / Back
-  </button>
+  <button class="button" routerLink="/home">Назад / Back</button>
   <div *ngIf="!cocktailBool">
     <div *ngFor="let coffee of coffeeWithMilk" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ coffee.name }}</h3>
         <p>
-          <strong [ngClass]="(coffee.promotionPrice) ? 'promotionClass' : 'promotionClass2'">{{
-            coffee.price }}</strong>
-
-          <strong *ngIf="promotionPriceBool">{{ coffee.promotionPrice }}</strong>
+          <strong
+            [ngClass]="
+              coffee.promotionPrice ? 'promotionClass' : 'promotionClass2'
+            "
+            >{{ coffee.price }}</strong
+          >
+          <strong *ngIf="promotionPriceBool && coffee.promotionPrice">
+            <span class="on_promotion">Promotion</span>
+            {{ coffee.promotionPrice }}</strong
+          >
         </p>
       </div>
       <div class="description_wrapper">
@@ -24,10 +28,12 @@
     <p>We do not serve coffee after 21:00h Friday and Saturday</p>
     <div>
       <p routerLink="/coctails">Cocktail Night</p>
-      <img src="../../../assets/images/cocktails2.jpg" alt="sorry.jpg" routerLink="/coctails" />
+      <img
+        src="../../../assets/images/cocktails2.jpg"
+        alt="sorry.jpg"
+        routerLink="/coctails"
+      />
     </div>
   </div>
-  <button class="button" routerLink="/home">
-    Назад / Back
-  </button>
+  <button class="button" routerLink="/home">Назад / Back</button>
 </div>

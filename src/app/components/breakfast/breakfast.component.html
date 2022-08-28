@@ -1,15 +1,16 @@
 <div class="coffee_container">
-  <button class="button" routerLink="/home">
-    Назад / Back
-  </button>
+  <button class="button" routerLink="/home">Назад / Back</button>
   <div>
     <div *ngFor="let food of breakfast" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ food.name }}</h3>
         <p>
-          <strong [ngClass]="(food.promotionPrice) ? 'promotionClass' : 'promotionClass2'">{{
-            food.price }}</strong>
-
+          <strong
+            [ngClass]="
+              food.promotionPrice ? 'promotionClass' : 'promotionClass2'
+            "
+            >{{ food.price }}</strong
+          >
           <strong *ngIf="promotionPriceBool">{{ food.promotionPrice }}</strong>
         </p>
       </div>
@@ -18,7 +19,5 @@
       </div>
     </div>
   </div>
-  <button class="button" routerLink="/home">
-    Назад / Back
-  </button>
+  <button class="button" routerLink="/home">Назад / Back</button>
 </div>

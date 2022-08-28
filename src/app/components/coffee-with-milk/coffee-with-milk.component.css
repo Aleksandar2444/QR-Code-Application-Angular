@@ -25,11 +25,38 @@
 }
 
 .promotionClass {
-
-
   text-decoration-line: line-through;
 }
 
 .promotionClass2 {
   color: #000000;
+}
+
+.name_and_price_wrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.on_promotion {
+  margin-right: 10px;
+  font-size: 14px;
+  color: darkmagenta;
+  position: absolute;
+  right: 90px;
+  animation: myAnim 2s ease 0s infinite normal none;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.13);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

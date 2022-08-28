@@ -11,11 +11,14 @@
 }
 
 .promotionClass {
-
-
   text-decoration-line: line-through;
 }
 
 .promotionClass2 {
   color: #000000;
+}
+
+.name_and_price_wrapper p {
+  display: flex;
+  flex-direction: column;
 }
