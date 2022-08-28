@@ -63,6 +63,8 @@ export class FreshJuicesComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+
     this.freshJuices.forEach(element => {
       if (element.promotion) {
         element.id = -1;
