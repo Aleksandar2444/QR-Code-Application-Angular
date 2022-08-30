@@ -56,7 +56,19 @@ export class CocktailsComponent implements OnInit {
 
 
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+    this.cocktails.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.cocktails.sort((a, b) => a.id - b.id);
+  }
 
 
 }

@@ -33,12 +33,10 @@ export class BreakfastComponent implements OnInit {
   ngOnInit(): void {
 
     this.breakfast.forEach(element => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
-
-        this.promotionPriceBool = true;
       }
     });
 

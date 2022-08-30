@@ -20,6 +20,31 @@
   font-weight: normal;
 }
 
+.promotionClass {
+  text-decoration-line: line-through;
+}
+
+.promotionClass2 {
+  color: #000000;
+
+}
+
+.name_and_price_wrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.on_promotion {
+  margin-right: 30px;
+  padding-bottom: 400px;
+  font-size: 15px;
+  color: darkmagenta;
+  position: absolute;
+  right: 90px;
+  animation: myAnim 2s ease 0s infinite normal none;
+}
 .beerCss {
   background-color: #a55270b0;
   width: 290px;
@@ -152,6 +177,19 @@
   margin-top: 15px;
 }
 
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.13);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @media only screen and (min-width: 600px) {
   .alchocol_main_wrapper {
     width: 100%;

@@ -65,6 +65,7 @@ export class CoffeeComponent implements OnInit {
       price: '140ден.',
       description:
         '(претходно изладено еспресо Арабика послужено врз коцки лед)',
+        promotionPrice: '90ден'
     },
   ];
 
@@ -76,12 +77,12 @@ export class CoffeeComponent implements OnInit {
     // console.log(this.today);
 
     this.coffee.forEach(element => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
 
-        this.promotionPriceBool = true;
+
       }
     });
 
@@ -127,7 +128,15 @@ export class CoffeeComponent implements OnInit {
         this.cocktailBool = false;
       }
     } else if (this.today.getDate() === sunday.getDate()) {
-      sunday.setHours(5, 0, 0);
+
+      if (this.today.getHours() > 4) {
+          sunday.setHours(5, 0, 0);
+
+      }
+      else {
+        this.cocktailBool = true;
+        return;
+      }
 
       if (this.today < sunday) {
         this.cocktailBool = true;

@@ -37,12 +37,12 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
   ngOnInit(): void {
 
     this.drinksWithoutCoffein.forEach(element => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
 
-        this.promotionPriceBool = true;
+
       }
     });
 
@@ -110,7 +110,14 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
       }
     }
     else if (this.today.getDate() === sunday.getDate()) {
-      sunday.setHours(5, 0, 0)
+      if (this.today.getHours() > 4) {
+        sunday.setHours(5, 0, 0);
+
+    }
+      else {
+      this.cocktailBool = true;
+      return;
+      }
 
       if (this.today < sunday) {
         this.cocktailBool = true;

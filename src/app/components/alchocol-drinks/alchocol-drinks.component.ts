@@ -9,278 +9,337 @@ import { Entity } from 'src/app/interfaces/coffee';
 export class AlchocolDrinksComponent implements OnInit {
   //*Beer
   public beer: Entity[] = [
-    // {
-    //   name: 'Скопско / Skopsko 0,33ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Златен Даб / Zlaten Dab 0,33ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Амстел / Amstel 0,33ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Туборг / Tuborg 0,33ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Хајнекен / Heineken 0,33ml',
-    //   price: '120ден.',
-    // },
-    // {
-    //   name: 'Старопрамен / Staropramen 0,50ml',
-    //   price: '150ден.',
-    // },
-    // {
-    //   name: 'Корона / Corona 0,33ml',
-    //   price: '160ден.',
-    // },
-    // {
-    //   name: 'Пуланер / Paulaner 0,50ml',
-    //   price: '200ден.',
-    // },
-    // {
-    //   name: 'Гинес / Guinness 0,33ml',
-    //   price: '200ден.',
-    // },
+    {
+      id: 1,
+      name: 'Скопско / Skopsko 0,33ml',
+      price: '80ден.',
+    },
+    {
+      id: 2,
+      name: 'Златен Даб / Zlaten Dab 0,33ml',
+      price: '80ден.',
+    },
+    {
+      id: 3,
+      name: 'Амстел / Amstel 0,33ml',
+      price: '100ден.',
+    },
+    {
+      id: 4,
+      name: 'Туборг / Tuborg 0,33ml',
+      price: '100ден.',
+      promotionPrice: '80ден.'
+    },
+    {
+      id: 5,
+      name: 'Хајнекен / Heineken 0,33ml',
+      price: '120ден.',
+    },
+    {
+      id: 6,
+      name: 'Старопрамен / Staropramen 0,50ml',
+      price: '150ден.',
+    },
+    {
+      id: 7,
+      name: 'Корона / Corona 0,33ml',
+      price: '160ден.',
+    },
+    {
+      id: 8,
+      name: 'Пуланер / Paulaner 0,50ml',
+      price: '200ден.',
+    },
+    {
+      id: 9,
+      name: 'Гинес / Guinness 0,33ml',
+      price: '200ден.',
+    },
   ];
 
   //*Martini
   public martini: Entity[] = [
-    // {
-    //   name: 'Мартини Бјанко / Martini Bianco 0.5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Кампари / Campari 0,5ml',
-    //   price: '110ден.',
-    // },
+    {
+      id: 10,
+      name: 'Мартини Бјанко / Martini Bianco 0.5ml',
+      price: '100ден.',
+    },
+    {
+      id: 11,
+      name: 'Кампари / Campari 0,5ml',
+      price: '110ден.',
+    },
   ];
 
   //*Digestifs
   public digestifs: Entity[] = [
-    // {
-    //   name: 'Пелинковац / Pelinkovac 0.5ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Урсус / Ursus 0,5ml',
-    //   price: '110ден.',
-    // },
-    // {
-    //   name: 'Јагермајстер / Jagermeister 0,5ml',
-    //   price: '120ден.',
-    // },
+    {
+      id: 12,
+      name: 'Пелинковац / Pelinkovac 0.5ml',
+      price: '80ден.',
+    },
+    {
+      id: 13,
+      name: 'Урсус / Ursus 0,5ml',
+      price: '110ден.',
+    },
+    {
+      id: 14,
+      name: 'Јагермајстер / Jagermeister 0,5ml',
+      price: '120ден.',
+    },
   ];
 
   //*Gin
   public gin: Entity[] = [
-    // {
-    //   name: 'Сакс / Sax 0.5ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Бомбај / Bombaj 0,5ml',
-    //   price: '120ден.',
-    // },
-    // {
-    //   name: 'Гордонс / Gordons 0,5ml',
-    //   price: '110ден.',
-    // },
-    // {
-    //   name: 'Танкерај / Tankeray 0,5ml',
-    //   price: '140ден.',
-    // },
-    // {
-    //   name: 'Хендрикс / Hendricks 0,5ml',
-    //   price: '220ден.',
-    // },
+    {
+      id: 15,
+      name: 'Сакс / Sax 0.5ml',
+      price: '80ден.',
+    },
+    {
+      id: 16,
+      name: 'Бомбај / Bombaj 0,5ml',
+      price: '120ден.',
+    },
+    {
+      id: 17,
+      name: 'Гордонс / Gordons 0,5ml',
+      price: '110ден.',
+    },
+    {
+      id: 18,
+      name: 'Танкерај / Tankeray 0,5ml',
+      price: '140ден.',
+    },
+    {
+      id: 19,
+      name: 'Хендрикс / Hendricks 0,5ml',
+      price: '220ден.',
+    },
   ];
 
   //*Rum
   public rum: Entity[] = [
-    // {
-    //   name: 'Капетан Морган / Captain Morgan 0.5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Бакарди / Bacardi 0,5ml',
-    //   price: '120ден.',
-    // },
+    {
+      id: 20,
+      name: 'Капетан Морган / Captain Morgan 0.5ml',
+      price: '100ден.',
+    },
+    {
+      id: 21,
+      name: 'Бакарди / Bacardi 0,5ml',
+      price: '120ден.',
+    },
   ];
 
   //*Liquers
   public liquers: Entity[] = [
-    // {
-    //   name: 'Малибу / Malubu 0.5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Арчерс / Archers 0,5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Бејлис / Bailys 0,5ml',
-    //   price: '120ден.',
-    // },
+    {
+      id: 22,
+      name: 'Малибу / Malubu 0.5ml',
+      price: '100ден.',
+    },
+    {
+      id: 23,
+      name: 'Арчерс / Archers 0,5ml',
+      price: '100ден.',
+    },
+    {
+      id: 24,
+      name: 'Бејлис / Bailys 0,5ml',
+      price: '120ден.',
+    },
   ];
 
   //*Vodka
   public vodka: Entity[] = [
-    // {
-    //   name: 'Смирнов / Smirnoff 0.5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Финландија / Finlandija 0,5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Абсолут / Absolut 0,5ml',
-    //   price: '120ден.',
-    // },
-    // {
-    //   name: 'Белведере / Belvedere 0,5ml',
-    //   price: '330ден.',
-    // },
-    // {
-    //   name: 'Греј Гус / Grey Goose 0,5ml',
-    //   price: '330ден.',
-    // },
+    {
+      id: 25,
+      name: 'Смирнов / Smirnoff 0.5ml',
+      price: '100ден.',
+    },
+    {
+      id: 26,
+      name: 'Финландија / Finlandija 0,5ml',
+      price: '100ден.',
+    },
+    {
+      id: 27,
+      name: 'Абсолут / Absolut 0,5ml',
+      price: '120ден.',
+    },
+    {
+      id: 28,
+      name: 'Белведере / Belvedere 0,5ml',
+      price: '330ден.',
+    },
+    {
+      id: 29,
+      name: 'Греј Гус / Grey Goose 0,5ml',
+      price: '330ден.',
+    },
   ];
 
   //*Cognac
   public cognac: Entity[] = [
-    // {
-    //   name: 'Хенесеј / Hennesy 0.5ml',
-    //   price: '250ден.',
-    // },
-    // {
-    //   name: 'Курвоазје / Courvoisier 0,5ml',
-    //   price: '300ден.',
-    // },
-    // {
-    //   name: 'Реми Мартин / Remmy Martin 0,5ml',
-    //   price: '350ден.',
-    // },
+    {
+      id: 30,
+      name: 'Хенесеј / Hennesy 0.5ml',
+      price: '250ден.',
+    },
+    {
+      id: 31,
+      name: 'Курвоазје / Courvoisier 0,5ml',
+      price: '300ден.',
+    },
+    {
+      id: 32,
+      name: 'Реми Мартин / Remmy Martin 0,5ml',
+      price: '350ден.',
+    },
   ];
 
   //*Brandy
   public brandy: Entity[] = [
-    // {
-    //   name: 'Бадел / Badel 0.5ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Вињак Рубин / Rubin Vinjak 0,5ml',
-    //   price: '80ден.',
-    // },
-    // {
-    //   name: 'Шток / Stock 0,5ml',
-    //   price: '90ден.',
-    // },
+    {
+      id: 33,
+      name: 'Бадел / Badel 0.5ml',
+      price: '80ден.',
+    },
+    {
+      id: 34,
+      name: 'Вињак Рубин / Rubin Vinjak 0,5ml',
+      price: '80ден.',
+    },
+    {
+      id: 35,
+      name: 'Шток / Stock 0,5ml',
+      price: '90ден.',
+    },
   ];
 
   //*Tequila
   public tequila: Entity[] = [
-    // {
-    //   name: 'Сиера Силвер / Sierra Silver 0.5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Сиера Голд / Sierra Gold 0,5ml',
-    //   price: '100ден.',
-    // },
-    // {
-    //   name: 'Хозе Куерво / Jose Cuervo 0,5ml',
-    //   price: '150ден.',
-    // },
+    {
+      id: 36,
+      name: 'Сиера Силвер / Sierra Silver 0.5ml',
+      price: '100ден.',
+    },
+    {
+      id: 37,
+      name: 'Сиера Голд / Sierra Gold 0,5ml',
+      price: '100ден.',
+    },
+    {
+      id: 38,
+      name: 'Хозе Куерво / Jose Cuervo 0,5ml',
+      price: '150ден.',
+    },
   ];
 
   //*Whisky
   public whisky: Entity[] = [
-    // {
-    //   name: 'Џони Валкер Ред Лабер / Johnny Walker Red Laber 0.5ml',
-    //   price: '150ден.',
-    // },
-    // {
-    //   name: 'J&B 0,5ml',
-    //   price: '150ден.',
-    // },
-    // {
-    //   name: 'Манки Шолдер / Moneky Shoulder 0,5ml',
-    //   price: '250ден.',
-    // },
-    // {
-    //   name: 'Џони Валкер Блек Лабел / Johhny walker Black Label 0,5ml',
-    //   price: '250ден.',
-    // },
-    // {
-    //   name: 'Чивас Регал 12 / Chivas Regal 12 0,5ml',
-    //   price: '250ден.',
-    // },
-    // {
-    //   name: 'Glenfiddich Select 0,5ml',
-    //   price: '300ден.',
-    // },
-    // {
-    //   name: 'Dimple Golder Selection 0,5ml',
-    //   price: '300ден.',
-    // },
-    // {
-    //   name: 'Карду / Cardhu 0,5ml',
-    //   price: '350ден.',
-    // },
+    {
+      id: 39,
+      name: 'Џони Валкер Ред Лабер / Johnny Walker Red Laber 0.5ml',
+      price: '150ден.',
+    },
+    {
+      id: 40,
+      name: 'J&B 0,5ml',
+      price: '150ден.',
+    },
+    {
+      id: 41,
+      name: 'Манки Шолдер / Moneky Shoulder 0,5ml',
+      price: '250ден.',
+    },
+    {
+      id: 42,
+      name: 'Џони Валкер Блек Лабел / Johhny walker Black Label 0,5ml',
+      price: '250ден.',
+    },
+    {
+      id: 43,
+      name: 'Чивас Регал 12 / Chivas Regal 12 0,5ml',
+      price: '250ден.',
+    },
+    {
+      id: 44,
+      name: 'Glenfiddich Select 0,5ml',
+      price: '300ден.',
+    },
+    {
+      id: 45,
+      name: 'Dimple Golder Selection 0,5ml',
+      price: '300ден.',
+    },
+    {
+      id: 46,
+      name: 'Карду / Cardhu 0,5ml',
+      price: '350ден.',
+    },
   ];
 
   //*Irish
   public irishWhisky: Entity[] = [
-    // {
-    //   name: 'Џејмисон / Jameson 0.5ml',
-    //   price: '150ден.',
-    // },
-    // {
-    //   name: 'Бушмилс 0,5ml',
-    //   price: '160ден.',
-    // },
-    // {
-    //   name: 'Бушмилс блек барел 0,5ml',
-    //   price: '220ден.',
-    // },
-    // {
-    //   name: 'Jameson Black barrel 0,5ml',
-    //   price: '300ден.',
-    // },
+    {
+      id:47,
+      name: 'Џејмисон / Jameson 0.5ml',
+      price: '150ден.',
+    },
+    {
+      id:48,
+      name: 'Бушмилс 0,5ml',
+      price: '160ден.',
+    },
+    {
+      id:49,
+      name: 'Бушмилс блек барел 0,5ml',
+      price: '220ден.',
+    },
+    {
+      id:50,
+      name: 'Jameson Black barrel 0,5ml',
+      price: '300ден.',
+    },
   ];
 
   //*Bourbon
   public bourbonWhisky: Entity[] = [
-    // {
-    //   name: 'Џим Бим / Jim Beam 0.5ml',
-    //   price: '170ден.',
-    // },
-    // {
-    //   name: 'Фоур Розес / Four Rouses 0,5ml',
-    //   price: '170ден.',
-    // },
+    {
+      id:51,
+      name: 'Џим Бим / Jim Beam 0.5ml',
+      price: '170ден.',
+    },
+    {
+      id:52,
+      name: 'Фоур Розес / Four Rouses 0,5ml',
+      price: '170ден.',
+      promotionPrice: '100ден'
+    },
   ];
 
   //*American
   public americanWhisky: Entity[] = [
-    // {
-    //   name: 'Џек Даниелс / Jack Daniels 0.5ml',
-    //   price: '200ден.',
-    // },
-    // {
-    //   name: 'Џек Даниелс Хани / Jack Daniels Honey 0,5ml',
-    //   price: '220ден.',
-    // },
-    // {
-    //   name: 'Џентлемен Џек / Gentleman Jack 0,5ml',
-    //   price: '250ден.',
-    // },
+    {
+      id:53,
+      name: 'Џек Даниелс / Jack Daniels 0.5ml',
+      price: '200ден.',
+    },
+    {
+      id:54,
+      name: 'Џек Даниелс Хани / Jack Daniels Honey 0,5ml',
+      price: '220ден.',
+      promotionPrice: '190ден'
+    },
+    {
+      id:55,
+      name: 'Џентлемен Џек / Gentleman Jack 0,5ml',
+      price: '250ден.',
+
+    },
   ];
 
   constructor() { }
@@ -298,7 +357,207 @@ export class AlchocolDrinksComponent implements OnInit {
   toggleTequila: boolean = false;
   toggleWhiskey: boolean = false;
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.beerPromotion();
+    this.martiniPromotion();
+    this.digestPromotion();
+    this.ginPromotion();
+    this.rumPromotion();
+    this.liquerPromotion();
+    this.vodkaPromotion();
+    this.kognacPromotion();
+    this.brendiPromotion();
+    this.tequilaPromotion();
+    this.whiskeyPromotion();
+    this.irishPromotion();
+    this.burbonPromotion();
+    this.americanPromotion();
+
+
+
+   }
+
+    beerPromotion(): void {
+    this.beer.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.beer.sort((a, b) => a.id - b.id);
+   }
+
+   martiniPromotion(): void {
+    this.martini.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.martini.sort((a, b) => a.id - b.id);
+   }
+
+   digestPromotion(): void {
+    this.digestifs.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.digestifs.sort((a, b) => a.id - b.id);
+   }
+
+   ginPromotion(): void {
+    this.gin.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.gin.sort((a, b) => a.id - b.id);
+   }
+
+   rumPromotion(): void {
+    this.rum.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.rum.sort((a, b) => a.id - b.id);
+   }
+
+   liquerPromotion(): void {
+    this.liquers.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.liquers.sort((a, b) => a.id - b.id);
+   }
+
+   vodkaPromotion(): void {
+    this.vodka.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.vodka.sort((a, b) => a.id - b.id);
+   }
+
+   kognacPromotion(): void {
+    this.cognac.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.cognac.sort((a, b) => a.id - b.id);
+   }
+
+   brendiPromotion(): void {
+    this.brandy.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.brandy.sort((a, b) => a.id - b.id);
+   }
+
+   tequilaPromotion(): void {
+    this.tequila.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.tequila.sort((a, b) => a.id - b.id);
+   }
+
+   whiskeyPromotion(): void {
+    this.whisky.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.whisky.sort((a, b) => a.id - b.id);
+   }
+
+   irishPromotion(): void {
+    this.irishWhisky.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.irishWhisky.sort((a, b) => a.id - b.id);
+   }
+
+   burbonPromotion(): void {
+    this.bourbonWhisky.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.bourbonWhisky.sort((a, b) => a.id - b.id);
+   }
+
+   americanPromotion(): void {
+    this.americanWhisky.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+
+
+      }
+    });
+
+    this.americanWhisky.sort((a, b) => a.id - b.id);
+   }
 
   //  this.coffeeWithMilk.forEach(element => {
   //    if (element.promotion) {

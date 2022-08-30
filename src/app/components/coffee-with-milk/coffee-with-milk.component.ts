@@ -50,7 +50,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       name: 'Latte',
       price: '90ден.',
       description: '(еспресо во кое ќе доминира богата доза млеко и пена)',
-      promotion: true,
       promotionPrice: '70ден.',
     },
     {
@@ -95,11 +94,11 @@ export class CoffeeWithMilkComponent implements OnInit {
     // console.log(this.today);
 
     this.coffeeWithMilk.forEach((element) => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
-        this.promotionPriceBool = true;
+
       }
     });
 
@@ -145,7 +144,14 @@ export class CoffeeWithMilkComponent implements OnInit {
         this.cocktailBool = false;
       }
     } else if (this.today.getDate() === sunday.getDate()) {
-      sunday.setHours(5, 0, 0);
+      if (this.today.getHours() > 4) {
+        sunday.setHours(5, 0, 0);
+
+    }
+      else {
+      this.cocktailBool = true;
+      return;
+      }
 
       if (this.today < sunday) {
         this.cocktailBool = true;

@@ -64,6 +64,7 @@ export class NonAlcoholicDrinksComponent implements OnInit {
       id: 10,
       name: 'Ред Бул / Red Bull',
       price: '150ден',
+      promotionPrice: '100ден'
     },
   ];
 
@@ -74,12 +75,12 @@ export class NonAlcoholicDrinksComponent implements OnInit {
   ngOnInit(): void {
 
     this.nonAlcoholicDrinks.forEach(element => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
 
-        this.promotionPriceBool = true;
+
       }
     });
 

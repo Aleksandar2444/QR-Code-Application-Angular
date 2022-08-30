@@ -14,7 +14,9 @@
             "
             >{{ drink.price }}</strong
           >
-          <strong *ngIf="promotionPriceBool">{{ drink.promotionPrice }}</strong>
+          <strong *ngIf="drink.promotionPrice">
+            <span class="on_promotion">Promotion</span>
+            {{ drink.promotionPrice }}</strong>
         </p>
       </div>
       <div class="description_wrapper">

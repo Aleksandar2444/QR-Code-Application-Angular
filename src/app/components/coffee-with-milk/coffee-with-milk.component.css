@@ -44,6 +44,8 @@
   color: darkmagenta;
   position: absolute;
   right: 90px;
+  transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
   animation: myAnim 2s ease 0s infinite normal none;
 }
 

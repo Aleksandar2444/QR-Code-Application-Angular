@@ -49,6 +49,7 @@ export class FreshJuicesComponent implements OnInit {
       id: 7,
       name: 'Ананас / Pineaple Juice 250мл',
       price: '150ден.',
+      promotionPrice: '90ден'
     },
     {
       id: 8,
@@ -66,12 +67,11 @@ export class FreshJuicesComponent implements OnInit {
 
 
     this.freshJuices.forEach(element => {
-      if (element.promotion) {
+      if (element.promotionPrice) {
         element.id = -1;
         element.id++;
 
 
-        this.promotionPriceBool = true;
       }
     });
 
