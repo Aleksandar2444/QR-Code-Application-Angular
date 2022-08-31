@@ -19,7 +19,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       name: 'Macchiato',
       price: '70ден.',
       description: '(совршена голтка еспресо потопена во кремасто млеко)',
-      promotion: false,
     },
     {
       id: 2,
@@ -27,7 +26,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '110ден.',
       description:
         '(за подолго уживање, дупла доза на еспресо и кремасто млеко)',
-      promotion: false,
     },
     {
       id: 3,
@@ -35,7 +33,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '80ден.',
       description:
         '(претходно изладено еспресо послушено врз коцки лед и пена)',
-      promotion: false,
     },
     {
       id: 4,
@@ -43,21 +40,18 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '140ден.',
       description:
         '(претходно изладено еспресо послушено врз коцки лед и пена)',
-      promotion: false,
     },
     {
       id: 5,
       name: 'Latte',
       price: '90ден.',
       description: '(еспресо во кое ќе доминира богата доза млеко и пена)',
-      promotionPrice: '70ден.',
     },
     {
       id: 6,
       name: 'Espresso con Pana',
       price: '70ден.',
       description: '(еспресо со додаток на домашен млечен крем)',
-      promotion: false,
     },
     {
       id: 7,
@@ -65,7 +59,7 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '110ден.',
       description:
         '(игра помеѓу кафе и млеко, каде што доминира вкусот на дупло еспресо)',
-      promotion: false,
+      promotionPrice: '90ден.',
     },
     {
       id: 8,
@@ -73,7 +67,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       price: '90ден.',
       description:
         '(дозволи ова комбинација на чоколадо, млеко и кафе да ти го подобри денот)',
-      promotion: true,
       promotionPrice: '70ден.',
     },
     {
@@ -81,7 +74,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       name: 'Irish Original',
       price: '200ден.',
       description: '(ирско виски, ирски крем, млеко и спресо шот)',
-      promotion: true,
       promotionPrice: '170ден.',
     },
   ];
@@ -97,8 +89,6 @@ export class CoffeeWithMilkComponent implements OnInit {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
@@ -146,11 +136,9 @@ export class CoffeeWithMilkComponent implements OnInit {
     } else if (this.today.getDate() === sunday.getDate()) {
       if (this.today.getHours() > 4) {
         sunday.setHours(5, 0, 0);
-
-    }
-      else {
-      this.cocktailBool = true;
-      return;
+      } else {
+        this.cocktailBool = true;
+        return;
       }
 
       if (this.today < sunday) {

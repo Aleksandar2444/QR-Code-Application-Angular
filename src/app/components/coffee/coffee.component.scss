@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin: 0 101px;
 }
-.coffee_container button {
+.coffee_container .button {
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   width: 100%;
   height: 75px;
@@ -16,6 +16,58 @@
   letter-spacing: 2px;
   cursor: pointer;
   color: white;
+}
+
+// .coffeeCss {
+//   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+//   width: 290px;
+//   height: 50px;
+//   border: none;
+//   border-radius: 3px;
+//   font-size: 16px;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+//   color: white;
+// }
+
+// .coffeeWithMilkCss {
+//   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+//   width: 290px;
+//   height: 50px;
+//   border: none;
+//   border-radius: 3px;
+//   font-size: 16px;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+//   color: white;
+// }
+
+// .drinksWithoutCoffeinCss {
+//   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+//   width: 290px;
+//   height: 50px;
+//   border: none;
+//   border-radius: 3px;
+//   font-size: 16px;
+//   letter-spacing: 2px;
+//   cursor: pointer;
+//   color: white;
+// }
+
+.coffee_type {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.coffee_type_two,
+.coffee_type_three {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .weekend_container p {
@@ -42,6 +94,10 @@
   width: 100%;
 }
 
+.name_and_price_wrapper h3 {
+  font-size: 16px;
+}
+
 .promotionClass {
   text-decoration-line: line-through;
 }
@@ -53,11 +109,16 @@
 .name_and_price_wrapper p {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+
+.description_wrapper p {
+  font-size: 15px;
 }
 
 .on_promotion {
-  margin-right: 30px;
-  padding-bottom: 400px;
+  // margin-right: 30px;
+  // padding-bottom: 400px;
   font-size: 14px;
   color: darkmagenta;
   position: absolute;
@@ -73,7 +134,7 @@
   }
 
   50% {
-    transform: scale(1.13);
+    transform: scale(1.5);
   }
 
   100% {

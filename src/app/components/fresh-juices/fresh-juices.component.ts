@@ -7,7 +7,6 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./fresh-juices.component.css'],
 })
 export class FreshJuicesComponent implements OnInit {
-
   public promotionPriceBool: boolean = false;
 
   public freshJuices: Entity[] = [
@@ -22,6 +21,7 @@ export class FreshJuicesComponent implements OnInit {
       name: 'Refresher 250мл',
       description: '(ананас, јаболка, лимон, ѓумбир)',
       price: '100ден.',
+      promotionPrice: '80ден',
     },
     {
       id: 3,
@@ -49,7 +49,6 @@ export class FreshJuicesComponent implements OnInit {
       id: 7,
       name: 'Ананас / Pineaple Juice 250мл',
       price: '150ден.',
-      promotionPrice: '90ден'
     },
     {
       id: 8,
@@ -58,25 +57,16 @@ export class FreshJuicesComponent implements OnInit {
     },
   ];
 
-  constructor() { }
-
-
+  constructor() {}
 
   ngOnInit(): void {
-
-
-
-    this.freshJuices.forEach(element => {
+    this.freshJuices.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.freshJuices.sort((a, b) => a.id - b.id);
   }
-
-
 }

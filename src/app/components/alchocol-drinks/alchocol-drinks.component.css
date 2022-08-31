@@ -26,7 +26,10 @@
 
 .promotionClass2 {
   color: #000000;
+}
 
+.name_and_price_wrapper {
+  width: 310px;
 }
 
 .name_and_price_wrapper p {
@@ -35,18 +38,37 @@
   align-items: flex-end;
 }
 
+.name_and_price_wrapper h3 {
+  font-size: 16px;
+}
 
 .on_promotion {
-  margin-right: 30px;
-  padding-bottom: 400px;
+  margin-right: 15px;
+  margin-top: 5px;
   font-size: 15px;
   color: darkmagenta;
   position: absolute;
   right: 90px;
   animation: myAnim 2s ease 0s infinite normal none;
 }
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .beerCss {
-  background-color: #a55270b0;
+  /* background-color: #a55270b0; */
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   width: 290px;
   height: 50px;
   border: none;
@@ -55,10 +77,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin: 15px 0;
+  color: white;
 }
 
 .martiniCss {
-  background-color: hsla(281, 42%, 59%, 0.69);
+  /* background-color: hsla(281, 42%, 59%, 0.69); */
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   width: 290px;
   height: 50px;
   border: none;
@@ -67,10 +91,13 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  color: white;
 }
 
 .digestifsCss {
-  background-color: #5f2e40b0;
+  /* background-color: #5f2e40b0; */
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+  color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -177,19 +204,6 @@
   margin-top: 15px;
 }
 
-@keyframes myAnim {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.13);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 @media only screen and (min-width: 600px) {
   .alchocol_main_wrapper {
     width: 100%;

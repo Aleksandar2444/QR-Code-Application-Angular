@@ -7,14 +7,11 @@ import { Entity } from 'src/app/interfaces/coffee';
   styleUrls: ['./drinks-without-coffein.component.css'],
 })
 export class DrinksWithoutCoffeinComponent implements OnInit {
-
   public cocktailBool: boolean = false;
 
   public today: Date = new Date();
 
   public promotionPriceBool: boolean = false;
-
-
 
   public drinksWithoutCoffein: Entity[] = [
     {
@@ -30,24 +27,17 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
     },
   ];
 
-  constructor() { }
-
-
+  constructor() {}
 
   ngOnInit(): void {
-
-    this.drinksWithoutCoffein.forEach(element => {
+    this.drinksWithoutCoffein.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
-
       }
     });
 
     this.drinksWithoutCoffein.sort((a, b) => a.id - b.id);
-
 
     // this.today.setDate(this.today.getDate() - 4);
     // this.today.setHours(6,0,0);
@@ -59,77 +49,54 @@ export class DrinksWithoutCoffeinComponent implements OnInit {
     const fifth = first + 4;
     const friday = new Date(today.setDate(fifth));
 
-
-
     const sixth = first + 5;
     const saturday = new Date(today.setDate(sixth));
 
-    const seventh = first + 6
+    const seventh = first + 6;
     const sunday = new Date(today.setDate(seventh));
-
-
 
     // console.log(friday);
     // console.log(saturday);
     // console.log(sunday);
 
-
-
-
     if (this.today.getDate() === friday.getDate()) {
-
       friday.setHours(21, 0, 0);
       saturday.setHours(5, 0, 0);
 
       if (this.today > friday && this.today < saturday) {
-
         this.cocktailBool = true;
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else if (this.today.getDate() === saturday.getDate()) {
-
+    } else if (this.today.getDate() === saturday.getDate()) {
       if (this.today.getHours() > 4) {
         saturday.setHours(21, 0, 0);
         sunday.setHours(5, 0, 0);
-      }
-      else {
+      } else {
         this.cocktailBool = true;
         return;
       }
 
-
       if (this.today > saturday && this.today < sunday) {
         this.cocktailBool = true;
-
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else if (this.today.getDate() === sunday.getDate()) {
+    } else if (this.today.getDate() === sunday.getDate()) {
       if (this.today.getHours() > 4) {
         sunday.setHours(5, 0, 0);
-
-    }
-      else {
-      this.cocktailBool = true;
-      return;
+      } else {
+        this.cocktailBool = true;
+        return;
       }
 
       if (this.today < sunday) {
         this.cocktailBool = true;
-      }
-      else {
+      } else {
         this.cocktailBool = false;
       }
-    }
-    else {
+    } else {
       this.cocktailBool = false;
     }
-
   }
-
 }

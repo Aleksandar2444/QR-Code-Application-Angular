@@ -25,6 +25,7 @@ export class CocktailsComponent implements OnInit {
       name: 'Mango Tai',
       price: '250ден.',
       description: 'Rum, Mango, Orgeat, Lemon, Pineapple',
+      promotionPrice: '210ден.',
     },
     {
       id: 4,
@@ -54,21 +55,14 @@ export class CocktailsComponent implements OnInit {
 
   constructor() {}
 
-
-
   ngOnInit(): void {
-
     this.cocktails.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.cocktails.sort((a, b) => a.id - b.id);
   }
-
-
 }

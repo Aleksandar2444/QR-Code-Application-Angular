@@ -28,7 +28,6 @@ export class AlchocolDrinksComponent implements OnInit {
       id: 4,
       name: 'Туборг / Tuborg 0,33ml',
       price: '100ден.',
-      promotionPrice: '80ден.'
     },
     {
       id: 5,
@@ -285,22 +284,22 @@ export class AlchocolDrinksComponent implements OnInit {
   //*Irish
   public irishWhisky: Entity[] = [
     {
-      id:47,
+      id: 47,
       name: 'Џејмисон / Jameson 0.5ml',
       price: '150ден.',
     },
     {
-      id:48,
+      id: 48,
       name: 'Бушмилс 0,5ml',
       price: '160ден.',
     },
     {
-      id:49,
+      id: 49,
       name: 'Бушмилс блек барел 0,5ml',
       price: '220ден.',
     },
     {
-      id:50,
+      id: 50,
       name: 'Jameson Black barrel 0,5ml',
       price: '300ден.',
     },
@@ -309,41 +308,37 @@ export class AlchocolDrinksComponent implements OnInit {
   //*Bourbon
   public bourbonWhisky: Entity[] = [
     {
-      id:51,
+      id: 51,
       name: 'Џим Бим / Jim Beam 0.5ml',
       price: '170ден.',
     },
     {
-      id:52,
+      id: 52,
       name: 'Фоур Розес / Four Rouses 0,5ml',
       price: '170ден.',
-      promotionPrice: '100ден'
     },
   ];
 
   //*American
   public americanWhisky: Entity[] = [
     {
-      id:53,
+      id: 53,
       name: 'Џек Даниелс / Jack Daniels 0.5ml',
       price: '200ден.',
     },
     {
-      id:54,
+      id: 54,
       name: 'Џек Даниелс Хани / Jack Daniels Honey 0,5ml',
       price: '220ден.',
-      promotionPrice: '190ден'
     },
     {
-      id:55,
+      id: 55,
       name: 'Џентлемен Џек / Gentleman Jack 0,5ml',
       price: '250ден.',
-
     },
   ];
 
-  constructor() { }
-
+  constructor() {}
 
   toggleBeer: boolean = false;
   toggleMartini: boolean = false;
@@ -372,198 +367,166 @@ export class AlchocolDrinksComponent implements OnInit {
     this.irishPromotion();
     this.burbonPromotion();
     this.americanPromotion();
+  }
 
-
-
-   }
-
-    beerPromotion(): void {
+  beerPromotion(): void {
     this.beer.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.beer.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   martiniPromotion(): void {
+  martiniPromotion(): void {
     this.martini.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.martini.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   digestPromotion(): void {
+  digestPromotion(): void {
     this.digestifs.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.digestifs.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   ginPromotion(): void {
+  ginPromotion(): void {
     this.gin.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.gin.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   rumPromotion(): void {
+  rumPromotion(): void {
     this.rum.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.rum.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   liquerPromotion(): void {
+  liquerPromotion(): void {
     this.liquers.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.liquers.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   vodkaPromotion(): void {
+  vodkaPromotion(): void {
     this.vodka.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.vodka.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   kognacPromotion(): void {
+  kognacPromotion(): void {
     this.cognac.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.cognac.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   brendiPromotion(): void {
+  brendiPromotion(): void {
     this.brandy.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.brandy.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   tequilaPromotion(): void {
+  tequilaPromotion(): void {
     this.tequila.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.tequila.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   whiskeyPromotion(): void {
+  whiskeyPromotion(): void {
     this.whisky.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.whisky.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   irishPromotion(): void {
+  irishPromotion(): void {
     this.irishWhisky.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.irishWhisky.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   burbonPromotion(): void {
+  burbonPromotion(): void {
     this.bourbonWhisky.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.bourbonWhisky.sort((a, b) => a.id - b.id);
-   }
+  }
 
-   americanPromotion(): void {
+  americanPromotion(): void {
     this.americanWhisky.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
       }
     });
 
     this.americanWhisky.sort((a, b) => a.id - b.id);
-   }
+  }
 
   //  this.coffeeWithMilk.forEach(element => {
   //    if (element.promotion) {
   //      element.id = -1;
   //      element.id++;
-
 
   //      this.promotionPriceBool = true;
   //    }

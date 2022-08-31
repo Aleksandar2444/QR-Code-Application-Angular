@@ -1,4 +1,4 @@
-.button {
+/* .button {
   width: 100%;
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   color: white;
@@ -35,9 +35,15 @@
 .name_and_price_wrapper p {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
+
+.name_and_price_wrapper h3 {
+  font-size: 19px;
+}
+
 .on_promotion {
-  margin-right: 10px;
+  margin-right: 5px;
   font-size: 14px;
   color: darkmagenta;
   position: absolute;
@@ -53,7 +59,7 @@
   }
 
   50% {
-    transform: scale(1.13);
+    transform: scale(1.5);
   }
 
   100% {
@@ -66,4 +72,4 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
-}
+} */

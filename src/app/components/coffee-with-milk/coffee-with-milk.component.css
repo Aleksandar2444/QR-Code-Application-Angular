@@ -1,4 +1,4 @@
-.button {
+/* .button {
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   color: white;
   width: 100%;
@@ -38,14 +38,22 @@
   align-items: flex-end;
 }
 
+.name_and_price_wrapper h3 {
+  font-size: 16px;
+}
+
+.description_wrapper p {
+  font-size: 15px;
+}
+
 .on_promotion {
-  margin-right: 10px;
+  margin-right: 6px;
   font-size: 14px;
   color: darkmagenta;
   position: absolute;
   right: 90px;
   transform: rotate(70deg);
-    -ms-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
   animation: myAnim 2s ease 0s infinite normal none;
 }
 
@@ -55,10 +63,10 @@
   }
 
   50% {
-    transform: scale(1.13);
+    transform: scale(1.5);
   }
 
   100% {
     transform: scale(1);
   }
-}
+} */

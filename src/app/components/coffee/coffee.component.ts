@@ -10,9 +10,13 @@ export class CoffeeComponent implements OnInit {
   public coffeeBool: boolean = false;
   public cocktailBool: boolean = false;
   public promotionPriceBool: boolean = false;
+  toggleCoffee: boolean = false;
+  toggleCoffeeWithMilk: boolean = false;
+  toggleDrinksWithoutCoffein: boolean = false;
 
   public today: Date = new Date();
 
+  //Coffee
   public coffee: Entity[] = [
     {
       id: 1,
@@ -46,6 +50,7 @@ export class CoffeeComponent implements OnInit {
       price: '60ден.',
       description:
         '(за подолго уживање, класичен еспресо со додаток на топла вода)',
+      promotionPrice: '40ден.',
     },
     {
       id: 6,
@@ -65,29 +70,127 @@ export class CoffeeComponent implements OnInit {
       price: '140ден.',
       description:
         '(претходно изладено еспресо Арабика послужено врз коцки лед)',
-        promotionPrice: '90ден'
     },
   ];
 
-  constructor() { }
+  //Coffee With Milk
+  public coffeeWithMilk: Entity[] = [
+    {
+      id: 1,
+      name: 'Macchiato',
+      price: '70ден.',
+      description: '(совршена голтка еспресо потопена во кремасто млеко)',
+    },
+    {
+      id: 2,
+      name: 'Macchiato Doppio',
+      price: '110ден.',
+      description:
+        '(за подолго уживање, дупла доза на еспресо и кремасто млеко)',
+    },
+    {
+      id: 3,
+      name: 'Freddo Cappucino',
+      price: '80ден.',
+      description:
+        '(претходно изладено еспресо послушено врз коцки лед и пена)',
+    },
+    {
+      id: 4,
+      name: 'Freddo Cappucino Doppio',
+      price: '140ден.',
+      description:
+        '(претходно изладено еспресо послушено врз коцки лед и пена)',
+    },
+    {
+      id: 5,
+      name: 'Latte',
+      price: '90ден.',
+      description: '(еспресо во кое ќе доминира богата доза млеко и пена)',
+    },
+    {
+      id: 6,
+      name: 'Espresso con Pana',
+      price: '70ден.',
+      description: '(еспресо со додаток на домашен млечен крем)',
+    },
+    {
+      id: 7,
+      name: 'Flat White',
+      price: '110ден.',
+      description:
+        '(игра помеѓу кафе и млеко, каде што доминира вкусот на дупло еспресо)',
+      promotionPrice: '90ден.',
+    },
+    {
+      id: 8,
+      name: 'Mocha',
+      price: '90ден.',
+      description:
+        '(дозволи ова комбинација на чоколадо, млеко и кафе да ти го подобри денот)',
+      promotionPrice: '70ден.',
+    },
+    {
+      id: 9,
+      name: 'Irish Original',
+      price: '200ден.',
+      description: '(ирско виски, ирски крем, млеко и спресо шот)',
+    },
+  ];
+
+  //Drinks Without Coffein
+  public drinksWithoutCoffein: Entity[] = [
+    {
+      id: 1,
+      name: 'Чај',
+      price: '70ден.',
+      description: '(билен или овошен, прашај персонал)',
+    },
+    {
+      id: 2,
+      name: 'Топло Чоколадо / Warm Chocolate',
+      price: '90ден.',
+    },
+  ];
+
+  constructor() {}
 
   ngOnInit(): void {
     // this.today.setDate(this.today.getDate() + 4);
     // this.today.setHours(0,1,0);
     // console.log(this.today);
 
-    this.coffee.forEach(element => {
+    //Coffee
+    this.coffee.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;
         element.id++;
-
-
-
       }
     });
 
     this.coffee.sort((a, b) => a.id - b.id);
 
+    //Coffee With Milk
+    this.coffeeWithMilk.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+      }
+    });
+
+    this.coffeeWithMilk.sort((a, b) => a.id - b.id);
+
+    //Drinks Without Coffein
+    this.drinksWithoutCoffein.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+      }
+    });
+
+    this.drinksWithoutCoffein.sort((a, b) => a.id - b.id);
+
+    //Weekend Agenda
     const today = new Date();
     const first = today.getDate() - today.getDay() + 1;
 
@@ -128,12 +231,9 @@ export class CoffeeComponent implements OnInit {
         this.cocktailBool = false;
       }
     } else if (this.today.getDate() === sunday.getDate()) {
-
       if (this.today.getHours() > 4) {
-          sunday.setHours(5, 0, 0);
-
-      }
-      else {
+        sunday.setHours(5, 0, 0);
+      } else {
         this.cocktailBool = true;
         return;
       }
@@ -147,4 +247,22 @@ export class CoffeeComponent implements OnInit {
       this.cocktailBool = false;
     }
   }
+
+  // ToggleCoffee() {
+  //   this.toggleCoffee = !this.toggleCoffee;
+  //   this.toggleCoffeeWithMilk = false;
+  //   this.toggleDrinksWithoutCoffein = false;
+  // }
+
+  // ToggleCoffeeWithMilk() {
+  //   this.toggleCoffeeWithMilk = !this.toggleCoffeeWithMilk;
+  //   this.toggleCoffee = false;
+  //   this.toggleDrinksWithoutCoffein = false;
+  // }
+
+  // ToggleDrinksWithoutCoffein() {
+  //   this.toggleDrinksWithoutCoffein = !this.toggleDrinksWithoutCoffein;
+  //   this.toggleCoffee = false;
+  //   this.toggleCoffeeWithMilk = false;
+  // }
 }
