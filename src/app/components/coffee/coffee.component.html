@@ -164,11 +164,7 @@
     </div>
     <!-- *Coffee with milk -->
     <p class="coffee_type_two">Кафе со млеко / Coffee with milk</p>
-    <div
-      class="alchocol_wrapper_two"
-      *ngFor="let drink of coffeeWithMilk"
-      class="coffee_card"
-    >
+    <div *ngFor="let drink of coffeeWithMilk" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ drink.name }}</h3>
         <p>
@@ -193,11 +189,7 @@
     <p class="coffee_type_three">
       Напитоци без Кофеин / Drinks without Coffein
     </p>
-    <div
-      class="alchocol_wrapper_two"
-      *ngFor="let drink of drinksWithoutCoffein"
-      class="coffee_card"
-    >
+    <div *ngFor="let drink of drinksWithoutCoffein" class="coffee_card">
       <div class="name_and_price_wrapper">
         <h3>{{ drink.name }}</h3>
         <p>

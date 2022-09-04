@@ -29,7 +29,7 @@
 }
 
 .name_and_price_wrapper {
-  width: 310px;
+  min-width: 85vw;
 }
 
 .name_and_price_wrapper p {

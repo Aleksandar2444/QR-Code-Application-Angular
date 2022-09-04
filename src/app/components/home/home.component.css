@@ -201,6 +201,10 @@
   font-family: sans-serif;
 }
 
+.button1 .b1 {
+  animation-delay: 3s;
+}
+
 @media only screen and (min-width: 730px) {
   .button5 {
     background-repeat: no-repeat;

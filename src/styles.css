@@ -21,6 +21,10 @@ body {
   margin: 0 5px;
 }
 
+.coffee_card:last-child {
+  border-bottom: none;
+}
+
 .name_and_price_wrapper {
   display: flex;
   justify-content: space-between;

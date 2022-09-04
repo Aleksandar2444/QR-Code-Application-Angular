@@ -241,7 +241,7 @@ export class AlchocolDrinksComponent implements OnInit {
   public whisky: Entity[] = [
     {
       id: 39,
-      name: 'Џони Валкер Ред Лабер / Johnny Walker Red Laber 0.5ml',
+      name: 'Џони-Валкер Ред Лабер / Johnny-Walker Red Label 0.5ml',
       price: '150ден.',
     },
     {
@@ -256,7 +256,7 @@ export class AlchocolDrinksComponent implements OnInit {
     },
     {
       id: 42,
-      name: 'Џони Валкер Блек Лабел / Johhny walker Black Label 0,5ml',
+      name: 'Џони Валкер Блек Лабел / Johhny Walker Black Label 0,5ml',
       price: '250ден.',
     },
     {
