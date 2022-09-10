@@ -249,10 +249,10 @@ export class CoffeeComponent implements OnInit {
     }
   }
 
-  toggleColor() {
-    this.element.classList.toggle("backgroundTogglerIn");
+  // toggleColor() {
+  //   this.element.classList.toggle("backgroundTogglerIn");
 
-  }
+  // }
 
   // ToggleCoffee() {
   //   this.toggleCoffee = !this.toggleCoffee;

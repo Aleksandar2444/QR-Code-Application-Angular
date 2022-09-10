@@ -23,9 +23,9 @@ export class HomeComponent implements OnInit {
 
   }
 
-  ToggleColor() {
-    this.element.classList.toggle("backgroundTogglerIn");
-  }
+  // ToggleColor() {
+  //   this.element.classList.toggle("backgroundTogglerIn");
+  // }
 
   // toggleColorOut() {
   //   let element = document.body;
