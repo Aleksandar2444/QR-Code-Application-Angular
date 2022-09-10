@@ -201,7 +201,7 @@ export class CoffeeComponent implements OnInit {
     const sixth = first + 5;
     const saturday = new Date(today.setDate(sixth));
 
-    const seventh = first + 6;
+    const seventh = first - 1;
     const sunday = new Date(today.setDate(seventh));
 
     // console.log(friday);
