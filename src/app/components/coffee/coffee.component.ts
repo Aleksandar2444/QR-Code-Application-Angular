@@ -15,6 +15,7 @@ export class CoffeeComponent implements OnInit {
   toggleDrinksWithoutCoffein: boolean = false;
 
   public today: Date = new Date();
+  public element = document.body;
 
   //Coffee
   public coffee: Entity[] = [
@@ -246,6 +247,11 @@ export class CoffeeComponent implements OnInit {
     } else {
       this.cocktailBool = false;
     }
+  }
+
+  toggleColor() {
+    this.element.classList.toggle("backgroundTogglerIn");
+
   }
 
   // ToggleCoffee() {

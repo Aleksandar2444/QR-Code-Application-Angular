@@ -1,6 +1,6 @@
 <div class="app_home">
   <div class="app_container">
-    <span>🔰</span>
+
     <div
       style="
         align-items: center;
@@ -19,13 +19,13 @@
       />
       <div class="call_now">
         <a href="#">Call now <i class="fa fa-phone"></i></a>
-        <p>for reservation</p>
+        <p>for reservations</p>
       </div>
       <h1>МЕНИ</h1>
     </div>
-    <span>🔰</span>
+
   </div>
-  <button class="button1" routerLink="/app-coffee">
+  <button class="button1" routerLink="/app-coffee" (click)="ToggleColor()">
     <span style="color: white">Кафе</span> / Coffee
   </button>
   <br />
@@ -39,11 +39,7 @@
     Напитоци без Кофеин / Drinks without Coffein
   </button>
   <br /><br /> -->
-  <button class="button4" routerLink="/breakfast">
-    Bakery from 09:30h - 12:00h
-  </button>
-  <br />
-  <br />
+
   <button class="button5" routerLink="/non-alcoholic">
     Безалкохолни Пијалоци / Non-alcoholic Drinks
   </button>
@@ -60,6 +56,11 @@
   <br />
   <br />
   <button class="button8" routerLink="/coctails">COCKTAILS</button>
+  <br />
+  <br />
+  <button class="button4" routerLink="/breakfast">
+    Bakery from 09:30h - 12:00h
+  </button>
 </div>
 <div class="social_links">
   <div class="error_img">
