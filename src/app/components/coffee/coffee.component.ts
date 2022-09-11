@@ -157,7 +157,7 @@ export class CoffeeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // this.today.setDate(this.today.getDate() + 4);
+    // this.today.setDate(this.today.getDate() - 1);
     // this.today.setHours(0,1,0);
     // console.log(this.today);
 
@@ -201,8 +201,11 @@ export class CoffeeComponent implements OnInit {
     const sixth = first + 5;
     const saturday = new Date(today.setDate(sixth));
 
-    const seventh = first - 1;
+    const seventh = first + 6;
     const sunday = new Date(today.setDate(seventh));
+
+    const eight = first - 1;
+    const secondSunday = new Date(today.setDate(eight));
 
     // console.log(friday);
     // console.log(saturday);
@@ -231,15 +234,15 @@ export class CoffeeComponent implements OnInit {
       } else {
         this.cocktailBool = false;
       }
-    } else if (this.today.getDate() === sunday.getDate()) {
+    } else if (this.today.getDate() === secondSunday.getDate()) {
       if (this.today.getHours() > 4) {
-        sunday.setHours(5, 0, 0);
+        secondSunday.setHours(5, 0, 0);
       } else {
         this.cocktailBool = true;
         return;
       }
 
-      if (this.today < sunday) {
+      if (this.today < secondSunday) {
         this.cocktailBool = true;
       } else {
         this.cocktailBool = false;
