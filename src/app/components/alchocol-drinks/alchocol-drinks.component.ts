@@ -523,17 +523,6 @@ export class AlchocolDrinksComponent implements OnInit {
     this.americanWhisky.sort((a, b) => a.id - b.id);
   }
 
-  //  this.coffeeWithMilk.forEach(element => {
-  //    if (element.promotion) {
-  //      element.id = -1;
-  //      element.id++;
-
-  //      this.promotionPriceBool = true;
-  //    }
-  //  });
-
-  // this.coffeeWithMilk.sort((a, b) => a.id - b.id);
-
   ToggleBeers() {
     this.toggleBeer = !this.toggleBeer;
 

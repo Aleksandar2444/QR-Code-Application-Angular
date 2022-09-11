@@ -1,23 +1,8 @@
 <div class="coffee_container">
-  <!-- <button class="button" (click)="OpenEntity()">
-    Алкохолни Пијалоци / Alcoholic Drinks
-  </button> -->
   <button class="button" routerLink="/home">Назад / Back</button>
   <!-- *Beer container -->
-  <div
-    class="alchocol_main_wrapper"
-    style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%"
-  >
-    <div
-      class="alchocol_wrapper_one"
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-      "
-    >
+  <div class="alchocol_main_wrapper">
+    <div class="alchocol_wrapper_one">
       <button class="beerCss" (click)="ToggleBeers()">Пиво / Beer</button>
       <div class="alchocol_wrapper_two" *ngIf="toggleBeer">
         <div *ngFor="let drink of beer" class="coffee_card">

@@ -1,18 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap");
 body {
   /* background-color: #e5ce97; */
-    background-color: black;
-    /* color: white; */
+  background-color: black;
   margin: 10px 20px;
+  font-family: "Mali", cursive;
 }
 
 .backgroundTogglerIn {
   background-color: black;
 }
 
-/* .backgroundTogglerOut {
-  background-color: #e5ce97;
-} */
 .coffee_container {
   display: flex;
   flex-direction: column;
@@ -51,4 +49,10 @@ body {
 
 button {
   color: #191d20;
+}
+
+@media only screen and (min-width: 920px) {
+  body {
+    background-color: #e5ce97;
+  }
 }

@@ -1,3 +1,18 @@
+.alchocol_main_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.alchocol_wrapper_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .button {
   background: linear-gradient(to bottom, #000000 0%, #363232 100%);
   width: 100%;

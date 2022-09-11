@@ -157,10 +157,6 @@ export class CoffeeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // this.today.setDate(this.today.getDate() - 1);
-    // this.today.setHours(0,1,0);
-    // console.log(this.today);
-
     //Coffee
     this.coffee.forEach((element) => {
       if (element.promotionPrice) {
@@ -207,10 +203,7 @@ export class CoffeeComponent implements OnInit {
     const eight = first - 1;
     const secondSunday = new Date(today.setDate(eight));
 
-    // console.log(friday);
-    // console.log(saturday);
-    // console.log(sunday);
-
+    //Weekend logic
     if (this.today.getDate() === friday.getDate()) {
       friday.setHours(21, 0, 0);
       saturday.setHours(5, 0, 0);
@@ -251,27 +244,4 @@ export class CoffeeComponent implements OnInit {
       this.cocktailBool = false;
     }
   }
-
-  // toggleColor() {
-  //   this.element.classList.toggle("backgroundTogglerIn");
-
-  // }
-
-  // ToggleCoffee() {
-  //   this.toggleCoffee = !this.toggleCoffee;
-  //   this.toggleCoffeeWithMilk = false;
-  //   this.toggleDrinksWithoutCoffein = false;
-  // }
-
-  // ToggleCoffeeWithMilk() {
-  //   this.toggleCoffeeWithMilk = !this.toggleCoffeeWithMilk;
-  //   this.toggleCoffee = false;
-  //   this.toggleDrinksWithoutCoffein = false;
-  // }
-
-  // ToggleDrinksWithoutCoffein() {
-  //   this.toggleDrinksWithoutCoffein = !this.toggleDrinksWithoutCoffein;
-  //   this.toggleCoffee = false;
-  //   this.toggleCoffeeWithMilk = false;
-  // }
 }
