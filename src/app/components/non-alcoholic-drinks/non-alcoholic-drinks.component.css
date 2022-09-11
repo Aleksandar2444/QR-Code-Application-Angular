@@ -47,6 +47,7 @@
 .on_promotion {
   margin-right: 5px;
   font-size: 14px;
+  font-family: cursive;
   color: darkmagenta;
   position: absolute;
   right: 90px;
@@ -68,6 +69,12 @@
     transform: scale(1);
   }
 }
+
+p,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @media only screen and (max-width: 800px) {
   .button {
     background-repeat: no-repeat;

@@ -82,6 +82,7 @@
 
 .on_promotion {
   font-size: 14px;
+  font-family: cursive;
   color: darkmagenta;
   position: absolute;
   right: 90px;
@@ -102,4 +103,9 @@
   100% {
     transform: scale(1);
   }
+}
+
+p,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
