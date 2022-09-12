@@ -4,7 +4,6 @@ body {
   /* background-color: #e5ce97; */
   background-color: black;
   margin: 10px 20px;
-  /* font-family: "Mali", cursive; */
 }
 
 .backgroundTogglerIn {
@@ -49,6 +48,80 @@ body {
 
 button {
   color: #191d20;
+}
+
+.button_back1 {
+  background: linear-gradient(to top, #000000 0%, #363232 100%);
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-radius: 3px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
+}
+
+.button_back2 {
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-radius: 3px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
+}
+
+.promotionClass {
+  text-decoration-line: line-through;
+}
+
+.promotionClass2 {
+  color: #000000;
+}
+
+.on_promotion {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Mali", cursive;
+  color: darkmagenta;
+  position: absolute;
+  right: 90px;
+  transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  animation: myAnim 2s ease 0s infinite normal none;
+}
+
+.name_and_price_wrapper p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.description_wrapper p {
+  font-size: 15px;
+}
+
+.name_and_price_wrapper h3 {
+  font-size: 16px;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media only screen and (min-width: 920px) {

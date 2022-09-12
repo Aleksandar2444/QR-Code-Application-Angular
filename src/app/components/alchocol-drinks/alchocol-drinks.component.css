@@ -13,18 +13,6 @@
   align-items: center;
 }
 
-.button {
-  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
-  width: 100%;
-  height: 75px;
-  border: none;
-  border-radius: 3px;
-  font-size: 22px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  color: white;
-}
-
 .alchocol_type {
   text-align: center;
   font-size: 20px;
@@ -35,51 +23,13 @@
   font-weight: normal;
 }
 
-.promotionClass {
-  text-decoration-line: line-through;
-}
-
-.promotionClass2 {
-  color: #000000;
-}
-
 .name_and_price_wrapper {
   min-width: 85vw;
 }
 
-.name_and_price_wrapper p {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.name_and_price_wrapper h3 {
-  font-size: 16px;
-}
-
-.on_promotion {
-  margin-right: 15px;
-  margin-top: 5px;
-  font-size: 15px;
-  font-family: "Mali", cursive;
-  color: darkmagenta;
-  position: absolute;
-  right: 90px;
-  animation: myAnim 2s ease 0s infinite normal none;
-}
-
-@keyframes myAnim {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.4);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.alchocol_wrapper_one button:active {
+  transform: translateY(4px);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .beerCss {
@@ -94,6 +44,7 @@
   cursor: pointer;
   margin: 15px 0;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .martiniCss {
@@ -108,6 +59,7 @@
   cursor: pointer;
   margin-bottom: 15px;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .digestifsCss {
@@ -122,6 +74,7 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .ginCss {
