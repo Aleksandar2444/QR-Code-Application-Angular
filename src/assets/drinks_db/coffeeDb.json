@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso Classico",
+    "price": "60ден.",
+    "description": "(класичен италијанско еспресо во мала шоља, идеален за почеток на денот)"
+  },
+  {
+    "id": 2,
+    "name": "Espresso Arrabica",
+    "price": "100ден.",
+    "description": "(100% Арабика за вистински љубители на кафе)"
+  },
+  {
+    "id": 3,
+    "name": "Espresso Doppio",
+    "price": "100ден.",
+    "description": "(дупла доза на кафе, за побрзо будење и подобра концетрација)"
+  },
+  {
+    "id": 4,
+    "name": "Espresso Arrabica Doppio",
+    "price": "140ден.",
+    "description": "(100% Арабика за вистински љубители на кафе)"
+  },
+  {
+    "id": 5,
+    "name": "Americano",
+    "price": "60ден.",
+    "description": "(за подолго уживање, класичен еспресо со додаток на топла вода)"
+  },
+  {
+    "id": 6,
+    "name": "Freddo Espresso",
+    "price": "70ден.",
+    "description": "(претходно изладено еспресо послужено врз коцки лед)",
+    "promotionPrice": "50ден."
+  },
+  {
+    "id": 7,
+    "name": "Freddo Espresso Doppio",
+    "price": "140ден.",
+    "description": "(претходно изладено дупло еспресо послужено врз коцки лед)"
+  },
+  {
+    "id": 8,
+    "name": "Freddo Espresso Arrabica",
+    "price": "140ден.",
+    "description": "(претходно изладено еспресо Арабика послужено врз коцки лед)"
+  }
+]
