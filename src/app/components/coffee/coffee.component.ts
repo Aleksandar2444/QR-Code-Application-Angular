@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Entity } from 'src/app/interfaces/coffee';
+import coffeeDbJson from 'src/assets/drinks_db/coffeeDb.json';
+import coffeeWithMilkDbJson from 'src/assets/drinks_db/coffeeWithMilkDb.json';
+import drinksWithoutCoffeinDbJson from 'src/assets/drinks_db/drinksWithoutCoffeinDb.json';
 
 @Component({
   selector: 'app-coffee',
@@ -18,141 +20,31 @@ export class CoffeeComponent implements OnInit {
   public element = document.body;
 
   //Coffee
-  public coffee: Entity[] = [
-    {
-      id: 1,
-      name: 'Espresso Classico',
-      price: '60ден.',
-      description:
-        '(класичен италијанско еспресо во мала шоља, идеален за почеток на денот)',
-    },
-    {
-      id: 2,
-      name: 'Espresso Arrabica',
-      price: '100ден.',
-      description: '(100% Арабика за вистински љубители на кафе)',
-    },
-    {
-      id: 3,
-      name: 'Espresso Doppio',
-      price: '100ден.',
-      description:
-        '(дупла доза на кафе, за побрзо будење и подобра концетрација)',
-    },
-    {
-      id: 4,
-      name: 'Espresso Arrabica Doppio',
-      price: '140ден.',
-      description: '(100% Арабика за вистински љубители на кафе)',
-    },
-    {
-      id: 5,
-      name: 'Americano',
-      price: '60ден.',
-      description:
-        '(за подолго уживање, класичен еспресо со додаток на топла вода)',
-      promotionPrice: '40ден.',
-    },
-    {
-      id: 6,
-      name: 'Freddo Espresso',
-      price: '70ден.',
-      description: '(претходно изладено еспресо послужено врз коцки лед)',
-    },
-    {
-      id: 7,
-      name: 'Freddo Espresso Doppio',
-      price: '140ден.',
-      description: '(претходно изладено дупло еспресо послужено врз коцки лед)',
-    },
-    {
-      id: 8,
-      name: 'Freddo Espresso Arrabica',
-      price: '140ден.',
-      description:
-        '(претходно изладено еспресо Арабика послужено врз коцки лед)',
-    },
-  ];
+  public coffee: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = coffeeDbJson;
 
   //Coffee With Milk
-  public coffeeWithMilk: Entity[] = [
-    {
-      id: 1,
-      name: 'Macchiato',
-      price: '70ден.',
-      description: '(совршена голтка еспресо потопена во кремасто млеко)',
-    },
-    {
-      id: 2,
-      name: 'Macchiato Doppio',
-      price: '110ден.',
-      description:
-        '(за подолго уживање, дупла доза на еспресо и кремасто млеко)',
-    },
-    {
-      id: 3,
-      name: 'Freddo Cappucino',
-      price: '80ден.',
-      description:
-        '(претходно изладено еспресо послушено врз коцки лед и пена)',
-    },
-    {
-      id: 4,
-      name: 'Freddo Cappucino Doppio',
-      price: '140ден.',
-      description:
-        '(претходно изладено еспресо послушено врз коцки лед и пена)',
-    },
-    {
-      id: 5,
-      name: 'Latte',
-      price: '90ден.',
-      description: '(еспресо во кое ќе доминира богата доза млеко и пена)',
-    },
-    {
-      id: 6,
-      name: 'Espresso con Pana',
-      price: '70ден.',
-      description: '(еспресо со додаток на домашен млечен крем)',
-    },
-    {
-      id: 7,
-      name: 'Flat White',
-      price: '110ден.',
-      description:
-        '(игра помеѓу кафе и млеко, каде што доминира вкусот на дупло еспресо)',
-      promotionPrice: '90ден.',
-    },
-    {
-      id: 8,
-      name: 'Mocha',
-      price: '90ден.',
-      description:
-        '(дозволи ова комбинација на чоколадо, млеко и кафе да ти го подобри денот)',
-      promotionPrice: '70ден.',
-    },
-    {
-      id: 9,
-      name: 'Irish Original',
-      price: '200ден.',
-      description: '(ирско виски, ирски крем, млеко и спресо шот)',
-    },
-  ];
+  public coffeeWithMilk: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = coffeeWithMilkDbJson;
 
   //Drinks Without Coffein
-  public drinksWithoutCoffein: Entity[] = [
-    {
-      id: 1,
-      name: 'Чај',
-      price: '70ден.',
-      description: '(билен или овошен, прашај персонал)',
-    },
-    {
-      id: 2,
-      name: 'Топло Чоколадо / Warm Chocolate',
-      price: '90ден.',
-    },
-  ];
+  public drinksWithoutCoffein: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = drinksWithoutCoffeinDbJson;
 
   constructor() {}
 

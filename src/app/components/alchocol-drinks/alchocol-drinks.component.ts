@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Entity } from 'src/app/interfaces/coffee';
+import alcoholDbJson from 'src/assets/drinks_db/alcoholDb.json';
 
 @Component({
   selector: 'app-alchocol-drinks',
@@ -8,335 +8,129 @@ import { Entity } from 'src/app/interfaces/coffee';
 })
 export class AlchocolDrinksComponent implements OnInit {
   //*Beer
-  public beer: Entity[] = [
-    {
-      id: 1,
-      name: 'Скопско / Skopsko 0,33ml',
-      price: '80ден.',
-    },
-    {
-      id: 2,
-      name: 'Златен Даб / Zlaten Dab 0,33ml',
-      price: '80ден.',
-    },
-    {
-      id: 3,
-      name: 'Амстел / Amstel 0,33ml',
-      price: '100ден.',
-    },
-    {
-      id: 4,
-      name: 'Туборг / Tuborg 0,33ml',
-      price: '100ден.',
-    },
-    {
-      id: 5,
-      name: 'Хајнекен / Heineken 0,33ml',
-      price: '120ден.',
-    },
-    {
-      id: 6,
-      name: 'Старопрамен / Staropramen 0,50ml',
-      price: '150ден.',
-    },
-    {
-      id: 7,
-      name: 'Корона / Corona 0,33ml',
-      price: '160ден.',
-    },
-    {
-      id: 8,
-      name: 'Пуланер / Paulaner 0,50ml',
-      price: '200ден.',
-    },
-    {
-      id: 9,
-      name: 'Гинес / Guinness 0,33ml',
-      price: '200ден.',
-    },
-  ];
+  public beer: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[0];
 
   //*Martini
-  public martini: Entity[] = [
-    {
-      id: 10,
-      name: 'Мартини Бјанко / Martini Bianco 0.5ml',
-      price: '100ден.',
-    },
-    {
-      id: 11,
-      name: 'Кампари / Campari 0,5ml',
-      price: '110ден.',
-    },
-  ];
+  public martini: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[1];
 
   //*Digestifs
-  public digestifs: Entity[] = [
-    {
-      id: 12,
-      name: 'Пелинковац / Pelinkovac 0.5ml',
-      price: '80ден.',
-    },
-    {
-      id: 13,
-      name: 'Урсус / Ursus 0,5ml',
-      price: '110ден.',
-    },
-    {
-      id: 14,
-      name: 'Јагермајстер / Jagermeister 0,5ml',
-      price: '120ден.',
-    },
-  ];
+  public digestifs: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[2];
 
   //*Gin
-  public gin: Entity[] = [
-    {
-      id: 15,
-      name: 'Сакс / Sax 0.5ml',
-      price: '80ден.',
-    },
-    {
-      id: 16,
-      name: 'Бомбај / Bombaj 0,5ml',
-      price: '120ден.',
-    },
-    {
-      id: 17,
-      name: 'Гордонс / Gordons 0,5ml',
-      price: '110ден.',
-    },
-    {
-      id: 18,
-      name: 'Танкерај / Tankeray 0,5ml',
-      price: '140ден.',
-    },
-    {
-      id: 19,
-      name: 'Хендрикс / Hendricks 0,5ml',
-      price: '220ден.',
-    },
-  ];
-
+  public gin: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[3];
   //*Rum
-  public rum: Entity[] = [
-    {
-      id: 20,
-      name: 'Капетан Морган / Captain Morgan 0.5ml',
-      price: '100ден.',
-    },
-    {
-      id: 21,
-      name: 'Бакарди / Bacardi 0,5ml',
-      price: '120ден.',
-    },
-  ];
+  public rum: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[4];
 
   //*Liquers
-  public liquers: Entity[] = [
-    {
-      id: 22,
-      name: 'Малибу / Malubu 0.5ml',
-      price: '100ден.',
-    },
-    {
-      id: 23,
-      name: 'Арчерс / Archers 0,5ml',
-      price: '100ден.',
-    },
-    {
-      id: 24,
-      name: 'Бејлис / Bailys 0,5ml',
-      price: '120ден.',
-    },
-  ];
+  public liquers: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[5];
 
   //*Vodka
-  public vodka: Entity[] = [
-    {
-      id: 25,
-      name: 'Смирнов / Smirnoff 0.5ml',
-      price: '100ден.',
-    },
-    {
-      id: 26,
-      name: 'Финландија / Finlandija 0,5ml',
-      price: '100ден.',
-    },
-    {
-      id: 27,
-      name: 'Абсолут / Absolut 0,5ml',
-      price: '120ден.',
-    },
-    {
-      id: 28,
-      name: 'Белведере / Belvedere 0,5ml',
-      price: '330ден.',
-    },
-    {
-      id: 29,
-      name: 'Греј Гус / Grey Goose 0,5ml',
-      price: '330ден.',
-    },
-  ];
+  public vodka: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[6];
 
   //*Cognac
-  public cognac: Entity[] = [
-    {
-      id: 30,
-      name: 'Хенесеј / Hennesy 0.5ml',
-      price: '250ден.',
-    },
-    {
-      id: 31,
-      name: 'Курвоазје / Courvoisier 0,5ml',
-      price: '300ден.',
-    },
-    {
-      id: 32,
-      name: 'Реми Мартин / Remmy Martin 0,5ml',
-      price: '350ден.',
-    },
-  ];
+  public cognac: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[7];
 
   //*Brandy
-  public brandy: Entity[] = [
-    {
-      id: 33,
-      name: 'Бадел / Badel 0.5ml',
-      price: '80ден.',
-    },
-    {
-      id: 34,
-      name: 'Вињак Рубин / Rubin Vinjak 0,5ml',
-      price: '80ден.',
-    },
-    {
-      id: 35,
-      name: 'Шток / Stock 0,5ml',
-      price: '90ден.',
-    },
-  ];
+  public brandy: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[8];
 
   //*Tequila
-  public tequila: Entity[] = [
-    {
-      id: 36,
-      name: 'Сиера Силвер / Sierra Silver 0.5ml',
-      price: '100ден.',
-    },
-    {
-      id: 37,
-      name: 'Сиера Голд / Sierra Gold 0,5ml',
-      price: '100ден.',
-    },
-    {
-      id: 38,
-      name: 'Хозе Куерво / Jose Cuervo 0,5ml',
-      price: '150ден.',
-    },
-  ];
+  public tequila: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[9];
 
   //*Whisky
-  public whisky: Entity[] = [
-    {
-      id: 39,
-      name: 'Џони-Валкер Ред Лабер / Johnny-Walker Red Label 0.5ml',
-      price: '150ден.',
-    },
-    {
-      id: 40,
-      name: 'J&B 0,5ml',
-      price: '150ден.',
-    },
-    {
-      id: 41,
-      name: 'Манки Шолдер / Moneky Shoulder 0,5ml',
-      price: '250ден.',
-    },
-    {
-      id: 42,
-      name: 'Џони Валкер Блек Лабел / Johhny Walker Black Label 0,5ml',
-      price: '250ден.',
-    },
-    {
-      id: 43,
-      name: 'Чивас Регал 12 / Chivas Regal 12 0,5ml',
-      price: '250ден.',
-    },
-    {
-      id: 44,
-      name: 'Glenfiddich Select 0,5ml',
-      price: '300ден.',
-    },
-    {
-      id: 45,
-      name: 'Dimple Golder Selection 0,5ml',
-      price: '300ден.',
-    },
-    {
-      id: 46,
-      name: 'Карду / Cardhu 0,5ml',
-      price: '350ден.',
-    },
-  ];
+  public whisky: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[10];
 
   //*Irish
-  public irishWhisky: Entity[] = [
-    {
-      id: 47,
-      name: 'Џејмисон / Jameson 0.5ml',
-      price: '150ден.',
-    },
-    {
-      id: 48,
-      name: 'Бушмилс 0,5ml',
-      price: '160ден.',
-    },
-    {
-      id: 49,
-      name: 'Бушмилс блек барел 0,5ml',
-      price: '220ден.',
-    },
-    {
-      id: 50,
-      name: 'Jameson Black barrel 0,5ml',
-      price: '300ден.',
-    },
-  ];
+  public irishWhisky: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[11];
 
   //*Bourbon
-  public bourbonWhisky: Entity[] = [
-    {
-      id: 51,
-      name: 'Џим Бим / Jim Beam 0.5ml',
-      price: '170ден.',
-    },
-    {
-      id: 52,
-      name: 'Фоур Розес / Four Rouses 0,5ml',
-      price: '170ден.',
-    },
-  ];
+  public bourbonWhisky: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[12];
 
   //*American
-  public americanWhisky: Entity[] = [
-    {
-      id: 53,
-      name: 'Џек Даниелс / Jack Daniels 0.5ml',
-      price: '200ден.',
-    },
-    {
-      id: 54,
-      name: 'Џек Даниелс Хани / Jack Daniels Honey 0,5ml',
-      price: '220ден.',
-    },
-    {
-      id: 55,
-      name: 'Џентлемен Џек / Gentleman Jack 0,5ml',
-      price: '250ден.',
-    },
-  ];
+  public americanWhisky: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[13];
 
   constructor() {}
 
