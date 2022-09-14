@@ -1,3 +1,12 @@
+* {
+  background-color: #f1e5cf !important;
+
+}
+
+body {
+  background-color: #f1e5cf !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 .alchocol_main_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +20,7 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 }
 
 .alchocol_type {
@@ -42,7 +52,7 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  margin: 15px 0;
+  /* margin: 15px 0; */
   color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
@@ -78,7 +88,8 @@
 }
 
 .ginCss {
-  background-color: #4973ceb0;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -87,10 +98,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .rumCss {
-  background-color: #adaf3fb0;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -99,10 +112,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .liquerCss {
-  background-color: #e0d88bb0;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -111,10 +126,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .vodkaCss {
-  background-color: #d8d0d3b0;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -123,10 +140,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .cognacCss {
-  background-color: #9c9a1eb0;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -135,22 +154,26 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .brandyCss {
-  background-color: #d5e9a0d3;
-  width: 290px;
-  height: 50px;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  margin-bottom: 15px;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
+    width: 290px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-bottom: 15px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .tequilaCss {
-  background-color: #c2b4b9ee;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -159,10 +182,12 @@
   letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 .whiskeyCss {
-  background-color: #caaa4088;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+    color: white;
   width: 290px;
   height: 50px;
   border: none;
@@ -170,7 +195,8 @@
   font-size: 16px;
   letter-spacing: 2px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
 p,

@@ -7,6 +7,9 @@ import alcoholDbJson from 'src/assets/drinks_db/alcoholDb.json';
   styleUrls: ['./alchocol-drinks.component.css'],
 })
 export class AlchocolDrinksComponent implements OnInit {
+
+  public panelOpenState: boolean = true;
+
   //*Beer
   public beer: {
     id: number;

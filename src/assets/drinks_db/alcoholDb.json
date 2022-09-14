@@ -23,7 +23,8 @@
     {
       "id": 5,
       "name": "Хајнекен / Heineken 0,33ml",
-      "price": "120ден."
+      "price": "120ден.",
+      "promotionPrice": ""
     },
     {
       "id": 6,

@@ -3,16 +3,40 @@
 body {
   /* background-color: #e5ce97; */
   background-color: black;
-  margin: 10px 20px;
+  margin: 10px 20px !important;
 }
 
 .backgroundTogglerIn {
   background-color: black;
 }
 
+.mat-expansion-panel {
+  background: rgba(0, 0, 0, .87);
+  color: rgba(0, 0, 0, .87);
+
+}
+
+.mat-expansion-panel-header {
+  height: 100% !important;
+}
+
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+  background: #f1e5cf;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  text-align: center;
+  align-content: space-around;
+  justify-content: space-around;
+}
 .coffee_container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   background-color: #f1e5cf;
   border-radius: 3px;
@@ -90,6 +114,7 @@ button {
   font-family: "Mali", cursive;
   color: darkmagenta;
   position: absolute;
+  padding-top: 4px;
   right: 90px;
   transform: rotate(70deg);
   -ms-transform: rotate(70deg);
@@ -128,4 +153,14 @@ button {
   body {
     background-color: #e5ce97;
   }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

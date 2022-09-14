@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import bakeryDbJson from 'src/assets/drinks_db/bakeryDb.json';
 
+
 @Component({
   selector: 'app-breakfast',
   templateUrl: './breakfast.component.html',
@@ -8,6 +9,7 @@ import bakeryDbJson from 'src/assets/drinks_db/bakeryDb.json';
 })
 export class BreakfastComponent implements OnInit {
   public promotionPriceBool: boolean = false;
+  public panelOpenState: boolean = true;
 
   public breakfast: {
     id: number;

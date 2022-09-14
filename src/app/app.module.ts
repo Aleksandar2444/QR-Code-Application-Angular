@@ -10,6 +10,9 @@ import { CocktailsComponent } from './components/cocktails/cocktails.component';
 // import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,7 @@ import { HomeComponent } from './components/home/home.component';
     CocktailsComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSliderModule, MatExpansionModule],
   providers: [],
   bootstrap: [AppComponent],
 })
