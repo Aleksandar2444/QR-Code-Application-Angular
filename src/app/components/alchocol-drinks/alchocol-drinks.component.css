@@ -1,12 +1,15 @@
-* {
+/* * {
   background-color: #f1e5cf !important;
 
 }
 
-body {
+*/
+/* body {
   background-color: #f1e5cf !important;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+*/
 .alchocol_main_wrapper {
   display: flex;
   flex-wrap: wrap;
