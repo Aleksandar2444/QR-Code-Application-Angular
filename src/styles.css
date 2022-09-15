@@ -3,7 +3,6 @@
 body {
   /* background-color: #e5ce97; */
   background-color: black;
-  /* margin: 10px 20px !important; */
 }
 
 .backgroundTogglerIn {
@@ -11,16 +10,16 @@ body {
 }
 
 .mat-expansion-panel {
-  background: rgba(0, 0, 0, .87);
-  color: rgba(0, 0, 0, .87);
-
+  background: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .mat-expansion-panel-header {
   height: 100% !important;
 }
 
-.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+.mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
   background: #f1e5cf;
 }
 
@@ -34,13 +33,36 @@ body {
   align-content: space-around;
   justify-content: space-around;
 }
+
+.mat-content {
+  overflow: visible !important;
+}
+
+.mat-content.mat-content-hide-toggle {
+  margin: 0 !important;
+}
+
+.mat-content.mat-content-hide-toggle:active {
+  transform: translateY(4px);
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mat-accordion > .mat-expansion-panel-spacing {
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 24px 0px !important;
+}
+
 .coffee_container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #f1e5cf;
   border-radius: 3px;
-  margin-bottom: 20px;
 }
 
 .coffee_card {
@@ -76,7 +98,7 @@ button {
 
 .button_back1 {
   background: linear-gradient(to top, #000000 0%, #363232 100%);
-  width: 100%;
+  width: -webkit-fill-available;
   height: 75px;
   border: none;
   border-radius: 3px;
@@ -109,12 +131,12 @@ button {
 }
 
 .on_promotion {
-  margin-right: 10px;
+  margin-right: 0px;
   font-size: 14px;
   font-family: "Mali", cursive;
   color: darkmagenta;
   position: absolute;
-  padding-top: 4px;
+  padding-top: 0px;
   right: 90px;
   transform: rotate(70deg);
   -ms-transform: rotate(70deg);
@@ -160,6 +182,15 @@ body {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
