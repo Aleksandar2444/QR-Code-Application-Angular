@@ -320,158 +320,158 @@ export class AlchocolDrinksComponent implements OnInit {
     this.americanWhisky.sort((a, b) => a.id - b.id);
   }
 
-  ToggleBeers() {
-    this.toggleBeer = !this.toggleBeer;
+  // ToggleBeers() {
+  //   this.toggleBeer = !this.toggleBeer;
 
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleMartinis() {
-    this.toggleMartini = !this.toggleMartini;
-    this.toggleBeer = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleMartinis() {
+  //   this.toggleMartini = !this.toggleMartini;
+  //   this.toggleBeer = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleDigestives() {
-    this.toggleDigest = !this.toggleDigest;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleDigestives() {
+  //   this.toggleDigest = !this.toggleDigest;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleGins() {
-    this.toggleGin = !this.toggleGin;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleGins() {
+  //   this.toggleGin = !this.toggleGin;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleRums() {
-    this.toggleRum = !this.toggleRum;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleRums() {
+  //   this.toggleRum = !this.toggleRum;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleLiquers() {
-    this.toggleLiquer = !this.toggleLiquer;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleLiquers() {
+  //   this.toggleLiquer = !this.toggleLiquer;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleVodkas() {
-    this.toggleVodka = !this.toggleVodka;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleVodkas() {
+  //   this.toggleVodka = !this.toggleVodka;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleCognacs() {
-    this.toggleCognac = !this.toggleCognac;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleCognacs() {
+  //   this.toggleCognac = !this.toggleCognac;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleBrandys() {
-    this.toggleBrendi = !this.toggleBrendi;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleTequila = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleBrandys() {
+  //   this.toggleBrendi = !this.toggleBrendi;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleTequila = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleTequilas() {
-    this.toggleTequila = !this.toggleTequila;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleWhiskey = false;
-  }
+  // ToggleTequilas() {
+  //   this.toggleTequila = !this.toggleTequila;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleWhiskey = false;
+  // }
 
-  ToggleWhiskies() {
-    this.toggleWhiskey = !this.toggleWhiskey;
-    this.toggleBeer = false;
-    this.toggleMartini = false;
-    this.toggleDigest = false;
-    this.toggleGin = false;
-    this.toggleRum = false;
-    this.toggleLiquer = false;
-    this.toggleVodka = false;
-    this.toggleCognac = false;
-    this.toggleBrendi = false;
-    this.toggleTequila = false;
-  }
+  // ToggleWhiskies() {
+  //   this.toggleWhiskey = !this.toggleWhiskey;
+  //   this.toggleBeer = false;
+  //   this.toggleMartini = false;
+  //   this.toggleDigest = false;
+  //   this.toggleGin = false;
+  //   this.toggleRum = false;
+  //   this.toggleLiquer = false;
+  //   this.toggleVodka = false;
+  //   this.toggleCognac = false;
+  //   this.toggleBrendi = false;
+  //   this.toggleTequila = false;
+  // }
 }

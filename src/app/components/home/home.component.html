@@ -4,36 +4,45 @@
       <img
         src="../assets/images/imageedit_15_9045779300.png"
         alt="logo"
-        style="width: 100px"
+        style="width: 100px; margin-top: 10px;"
         class="rotate"
       />
-      <div class="call_now">
-        <a href="tel:+38972683317">Call now <i class="fa fa-phone"></i></a>
-        <p>for reservation</p>
+      <div class="langauge_change">
+        <button mat-fab [matMenuTriggerFor]="beforeMenu">
+          <mat-icon>translate</mat-icon>
+        </button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item #selectLang (click)="switchLanguage('en')">English</button>
+          <button mat-menu-item #selectLang (click)="switchLanguage('mk')">Macedonian</button>
+        </mat-menu>
       </div>
-      <h1 class="menu_title">МЕНИ</h1>
+      <div class="call_now">
+        <a href="tel:+38972683317">{{'callNow' | translate}} <i class="fa fa-phone"></i></a>
+        <p>{{'forRes' | translate}}</p>
+      </div>
+      <h1 class="menu_title">{{'MENU' | translate}}</h1>
     </div>
   </div>
   <button class="button1" routerLink="/app-coffee">
-    <span>Кафе</span> / Coffee
+    <span>{{'Coffee' | translate}}</span>
   </button>
   <br />
   <br />
   <button class="button2" routerLink="/non-alcoholic">
-    Безалкохолни Пијалоци / Non-alcoholic Drinks
+    {{'Non-alcoholic Drinks' | translate}}
   </button>
   <br />
   <br />
   <button class="button3" routerLink="/alcoholic-drinks">
-    Алкохолни Пијалоци / Alcoholic Drinks
+    {{'Alcoholic Drinks' | translate}}
   </button>
   <br />
   <br />
-  <button class="button4" routerLink="/coctails">COCKTAILS</button>
+  <button class="button4" routerLink="/coctails">{{'COCKTAILS' | translate}}</button>
   <br />
   <br />
   <button class="button5" routerLink="/breakfast">
-    Bakery from 09:30h - 12:00h
+    {{'Bakery from 09:30h - 12:00h' | translate}}
   </button>
 </div>
 <div class="social_links">

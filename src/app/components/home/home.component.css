@@ -157,6 +157,16 @@
   font-family: monospace;
 }
 
+.langauge_change {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* width: 100px; */
+  position: absolute;
+  right: 20px;
+  top: 30px;
+
+}
 .call_now a {
   height: 30px;
   margin: 0;

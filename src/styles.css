@@ -18,6 +18,18 @@ body {
   height: 100% !important;
 }
 
+.mat-menu-panel {
+  background: #f1e5cf;
+}
+
+.mat-icon {
+  color: #000000;
+}
+
+.mat-fab.mat-accent,
+.mat-mini-fab.mat-accent {
+  background-color: #f1e5cf;
+}
 .mat-expansion-panel:not(.mat-expanded)
   .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
   background: #f1e5cf;
