@@ -172,7 +172,8 @@
   margin: 0;
   width: 100px;
   font-size: 15px;
-  font-family: "Mali", cursive;
+  font-family: "Mali";
+    /* font-family: "Mali", cursive; */
   background-color: #343a40;
   border-color: #343a40;
   text-align: center;
