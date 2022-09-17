@@ -4,45 +4,53 @@
       <img
         src="../assets/images/imageedit_15_9045779300.png"
         alt="logo"
-        style="width: 100px; margin-top: 10px;"
+        style="width: 100px; margin-top: 10px"
         class="rotate"
       />
       <div class="langauge_change">
-        <button mat-fab [matMenuTriggerFor]="beforeMenu">
+        <button mat-mini-fab [matMenuTriggerFor]="beforeMenu">
           <mat-icon>translate</mat-icon>
         </button>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
-          <button mat-menu-item #selectLang (click)="switchLanguage('en')">English</button>
-          <button mat-menu-item #selectLang (click)="switchLanguage('mk')">Macedonian</button>
+          <button mat-menu-item #selectLang (click)="switchLanguage('en')">
+            English
+          </button>
+          <button mat-menu-item #selectLang (click)="switchLanguage('mk')">
+            Macedonian
+          </button>
         </mat-menu>
       </div>
       <div class="call_now">
-        <a href="tel:+38972683317">{{'callNow' | translate}} <i class="fa fa-phone"></i></a>
-        <p>{{'forRes' | translate}}</p>
+        <a href="tel:+38972683317"
+          >{{ "callNow" | translate }} <i class="fa fa-phone"></i
+        ></a>
+        <p>{{ "forRes" | translate }}</p>
       </div>
-      <h1 class="menu_title">{{'MENU' | translate}}</h1>
+      <h1 class="menu_title">{{ "MENU" | translate }}</h1>
     </div>
   </div>
   <button class="button1" routerLink="/app-coffee">
-    <span>{{'Coffee' | translate}}</span>
+    <span>{{ "Coffee" | translate }}</span>
   </button>
   <br />
   <br />
   <button class="button2" routerLink="/non-alcoholic">
-    {{'Non-alcoholic Drinks' | translate}}
+    {{ "Non-alcoholic Drinks" | translate }}
   </button>
   <br />
   <br />
   <button class="button3" routerLink="/alcoholic-drinks">
-    {{'Alcoholic Drinks' | translate}}
+    {{ "Alcoholic Drinks" | translate }}
   </button>
   <br />
   <br />
-  <button class="button4" routerLink="/coctails">{{'COCKTAILS' | translate}}</button>
+  <button class="button4" routerLink="/coctails">
+    {{ "COCKTAILS" | translate }}
+  </button>
   <br />
   <br />
   <button class="button5" routerLink="/breakfast">
-    {{'Bakery from 09:30h - 12:00h' | translate}}
+    {{ "Bakery from 09:30h - 12:00h" | translate }}
   </button>
 </div>
 <div class="social_links">

@@ -29,13 +29,13 @@ body {
 .mat-fab.mat-accent,
 .mat-mini-fab.mat-accent {
   background-color: #f1e5cf;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
 }
 
-.mat-fab .mat-button-wrapper {
+/* .mat-fab .mat-button-wrapper {
   padding: 12px 0px !important;
-}
+} */
 
 .mat-menu-item:first-child .mat-menu-ripple {
   border-bottom: 1px solid black;
