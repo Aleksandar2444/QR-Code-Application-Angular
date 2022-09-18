@@ -6,5 +6,12 @@
   "Non-alcoholic Drinks": "Безалкохолни Пијалоци",
   "Alcoholic Drinks": "Алкохолни Пијалоци",
   "COCKTAILS": "КОКТЕЛИ",
-  "Bakery from 09:30h - 12:00h": "Пекара од 09:30ч - 12:00ч"
+  "Bakery from 09:30h - 12:00h": "Пекара од 09:30ч - 12:00ч",
+    "CoffeeComponent": {
+    "coffeeTitle": "Кафе",
+    "cofeeWithMilk": "Кафе со млеко",
+    "drinksWithoutCoffeein": "Напитоци без Кофеин",
+    "Tea": "Чај",
+    "Warm Chocolate": "Топло Чоколадо"
+    }
 }

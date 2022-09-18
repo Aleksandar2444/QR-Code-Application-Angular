@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Чај",
+    "name": "Tea",
     "price": "70ден.",
     "description": "(билен или овошен, прашај персонал)"
   },
   {
     "id": 2,
-    "name": "Топло Чоколадо / Warm Chocolate",
+    "name": "Warm Chocolate",
     "price": "90ден."
   }
 ]
