@@ -1,379 +1,7 @@
 <div class="coffee_container">
   <button class="button_back1" routerLink="/home">Назад / Back</button>
-  <!-- *Beer container -->
   <div class="alchocol_main_wrapper">
     <div class="alchocol_wrapper_one">
-      <!-- <button class="beerCss" (click)="ToggleBeers()">Пиво / Beer</button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleBeer">
-        <div *ngFor="let drink of beer" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- *Martini container -->
-      <!-- <button class="martiniCss" (click)="ToggleMartinis()">
-        Мартини / Martini
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleMartini">
-        <div *ngFor="let drink of martini" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Digestifs container -->
-      <!-- <button class="digestifsCss" (click)="ToggleDigestives()">
-        Дигестиви / Digestifs
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleDigest">
-        <div *ngFor="let drink of digestifs" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Gin container -->
-      <!-- <button class="ginCss" (click)="ToggleGins()">Џин / Gin</button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleGin">
-        <div *ngFor="let drink of gin" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Rum container -->
-      <!-- <button class="rumCss" (click)="ToggleRums()">Рум / Rum</button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleRum">
-        <div *ngFor="let drink of rum" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Liquers container -->
-      <!-- <button class="liquerCss" (click)="ToggleLiquers()">
-        Ликери / Liquers
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleLiquer">
-        <div *ngFor="let drink of liquers" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Vodka container -->
-      <!-- <button class="vodkaCss" (click)="ToggleVodkas()">Вотка / Vodka</button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleVodka">
-        <div *ngFor="let drink of vodka" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Cognac container -->
-      <!-- <button class="cognacCss" (click)="ToggleCognacs()">
-        Коњак / Cognac
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleCognac">
-        <div *ngFor="let drink of cognac" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Brandy container -->
-      <!-- <button class="brandyCss" (click)="ToggleBrandys()">
-        Бренди / Brandy
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleBrendi">
-        <div *ngFor="let drink of brandy" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}
-              </strong>
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Tequila container -->
-      <!-- <button class="tequilaCss" (click)="ToggleTequilas()">
-        Текила / Tequila
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleTequila">
-        <div *ngFor="let drink of tequila" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
-      <!-- *Whisk(e)y container -->
-      <!-- <button class="whiskeyCss" (click)="ToggleWhiskies()">
-        Виски / Whisk(e)y
-      </button>
-      <div class="alchocol_wrapper_two" *ngIf="toggleWhiskey">
-        <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
-        <div *ngFor="let drink of whisky" class="coffee_card">
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div> -->
-      <!-- *Irish Whiskey container -->
-      <!-- <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
-        <div
-          class="alchocol_wrapper_two"
-          *ngFor="let drink of irishWhisky"
-          class="coffee_card"
-        >
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div> -->
-      <!-- *Bourbon container -->
-      <!-- <p class="alchocol_type">Бурбон Виски / Bourbon Whiskey</p>
-        <div
-          class="alchocol_wrapper_two"
-          *ngFor="let drink of bourbonWhisky"
-          class="coffee_card"
-        >
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}
-              </strong>
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div> -->
-      <!-- *American container -->
-      <!-- <p class="alchocol_type">Американско Виски / American Whiskey</p>
-        <div
-          class="alchocol_wrapper_two"
-          *ngFor="let drink of americanWhisky"
-          class="coffee_card"
-        >
-          <div class="name_and_price_wrapper">
-            <h3 class="alchocol_name">{{ drink.name }}</h3>
-            <p>
-              <strong
-                [ngClass]="
-                  drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                "
-                >{{ drink.price }}</strong
-              >
-
-              <strong *ngIf="drink.promotionPrice">
-                <span class="on_promotion">Promotion</span>
-                {{ drink.promotionPrice }}</strong
-              >
-            </p>
-          </div>
-          <div class="description_wrapper">
-            <p>{{ drink.description }}</p>
-          </div>
-        </div>
-      </div> -->
       <mat-accordion>
         <mat-expansion-panel
           (opened)="panelOpenState = true"
@@ -759,15 +387,14 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
+          <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
             <div *ngFor="let drink of whisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
                   <strong
                     [ngClass]="
-                      drink.promotionPrice
-                        ? 'promotionClass'
-                        : 'promotionClass2'
+                      drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
                     "
                     >{{ drink.price }}</strong
                   >
@@ -782,6 +409,73 @@
                 <p>{{ drink.description }}</p>
               </div>
             </div>
+          <!-- *Irish Whiskey container -->
+          <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
+            <div
+              class="alchocol_wrapper_two"
+              *ngFor="let drink of irishWhisky"
+              class="coffee_card"
+            >
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong
+                    [ngClass]="
+                      drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+                    "
+                    >{{ drink.price }}</strong
+                  >
+
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong
+                  >
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+            <!-- *Bourbon container -->
+            <p class="alchocol_type">Бурбон Виски / Bourbon Whiskey</p>
+            <div class="alchocol_wrapper_two" *ngFor="let drink of bourbonWhisky" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong [ngClass]="
+                                                                drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+                                                              ">{{ drink.price }}</strong>
+            
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}
+                  </strong>
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+            </div>
+            <!-- *American container -->
+            <p class="alchocol_type">Американско Виски / American Whiskey</p>
+            <div class="alchocol_wrapper_two" *ngFor="let drink of americanWhisky" class="coffee_card">
+              <div class="name_and_price_wrapper">
+                <h3 class="alchocol_name">{{ drink.name }}</h3>
+                <p>
+                  <strong [ngClass]="
+                                                                drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
+                                                              ">{{ drink.price }}</strong>
+            
+                  <strong *ngIf="drink.promotionPrice">
+                    <span class="on_promotion">Promotion</span>
+                    {{ drink.promotionPrice }}</strong>
+                </p>
+              </div>
+              <div class="description_wrapper">
+                <p>{{ drink.description }}</p>
+              </div>
+
+          </div>
           </div>
         </mat-expansion-panel>
       </mat-accordion>
