@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import coffeeDbJson from 'src/assets/drinks_db/coffeeDb.json';
 import coffeeWithMilkDbJson from 'src/assets/drinks_db/coffeeWithMilkDb.json';
 import drinksWithoutCoffeinDbJson from 'src/assets/drinks_db/drinksWithoutCoffeinDb.json';
@@ -46,9 +47,20 @@ export class CoffeeComponent implements OnInit {
     promotionPrice?: string;
   }[] = drinksWithoutCoffeinDbJson;
 
-  constructor() {}
+  constructor(
+    public translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
+    if(localStorage.length >= 1) {
+      var test = localStorage.getItem("item_key");
+
+      if(test != null) {
+      this.translate.use(test.toString());
+      }
+    }
+
+
     //Coffee
     this.coffee.forEach((element) => {
       if (element.promotionPrice) {

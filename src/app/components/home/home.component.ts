@@ -10,7 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent implements OnInit {
   test: boolean = false;
   element = document.body;
-
+  // localStorLanguage: string;
+  // userLastedLang: string;
   public year = new Date().getFullYear();
 
   constructor(
@@ -23,9 +24,22 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.test = true;
+
+    if(localStorage.length >= 1) {
+      var test = localStorage.getItem("item_key");
+
+      if(test != null) {
+      this.translate.use(test.toString());
+      }
+    }
+
+
+
   }
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
+
+    localStorage.setItem("item_key",lang);
   }
 }
