@@ -2,45 +2,45 @@
   {
     "id": 1,
     "name": "Soda Citron 250мл",
-    "description": "(цеден лимон со газирана вода)",
+    "description": "(squeesed lemon with tonic)",
     "price": "90ден."
   },
   {
     "id": 2,
     "name": "Refresher 250мл",
-    "description": "(ананас, јаболка, лимон, ѓумбир)",
+    "description": "(pineapple, apple, lemon, ginger)",
     "price": "100ден."
   },
   {
     "id": 3,
     "name": "Immunobooster 250мл",
-    "description": "(портокал, калинка, јаболка)",
+    "description": "(orange, pomegranate, apple)",
     "price": "100ден."
   },
   {
     "id": 4,
     "name": "Ginger Shot 100мл",
-    "description": "(ѓумбир, лимон, куркума, црн бибер)",
+    "description": "(ginger, lemon, turmeric, black pepper)",
     "price": "100ден."
   },
   {
     "id": 5,
-    "name": "Портокал / Orange Juice 250мл",
+    "name": "Orange Juice",
     "price": "100ден."
   },
   {
     "id": 6,
-    "name": "Јаболка / Apple Juice 250мл",
+    "name": "Apple Juice",
     "price": "100ден."
   },
   {
     "id": 7,
-    "name": "Ананас / Pineaple Juice 250мл",
+    "name": "Pineaple Juice",
     "price": "150ден."
   },
   {
     "id": 8,
-    "name": "Калинка / Pomegranate Juice 250мл",
+    "name": "Pomegranate Juice",
     "price": "150ден."
   }
 ]

@@ -1,14 +1,10 @@
 <div class="coffee_container">
-  <button class="button_back1" routerLink="/home">Назад / Back</button>
+  <button class="button_back1" routerLink="/home">{{"BACK" | translate}}</button>
   <div class="alchocol_main_wrapper">
     <div class="alchocol_wrapper_one">
       <mat-accordion>
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="beerCss"> Пиво / Beer </mat-panel-title>
           </mat-expansion-panel-header>
@@ -17,19 +13,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -39,12 +31,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="martiniCss">
               Мартини / Martini
@@ -55,19 +43,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -77,12 +61,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="digestifsCss">
               Дигестиви / Digestifs
@@ -93,19 +73,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -115,12 +91,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="ginCss"> Џин / Gin </mat-panel-title>
           </mat-expansion-panel-header>
@@ -129,19 +101,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -151,12 +119,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="rumCss"> Рум / Rum </mat-panel-title>
           </mat-expansion-panel-header>
@@ -165,19 +129,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -187,12 +147,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="liquerCss">
               Ликери / Liquers
@@ -203,19 +159,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -225,12 +177,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="vodkaCss"> Вотка / Vodka </mat-panel-title>
           </mat-expansion-panel-header>
@@ -239,19 +187,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -261,12 +205,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="cognacCss">
               Коњак / Cognac
@@ -277,19 +217,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -299,12 +235,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="brandyCss">
               Бренди / Brandy
@@ -315,19 +247,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -337,12 +265,8 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="tequilaCss">
               Текила / Tequila
@@ -353,19 +277,15 @@
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'
                         : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -375,61 +295,45 @@
           </div>
         </mat-expansion-panel>
 
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-          hideToggle
-          style="background-color: #f1e5cf !important; box-shadow: none"
-        >
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
+          style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="whiskeyCss">
               Виски / Whisk(e)y
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
-          <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
+            <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
             <div *ngFor="let drink of whisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
                 <p>{{ drink.description }}</p>
               </div>
             </div>
-          <!-- *Irish Whiskey container -->
-          <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
-            <div
-              class="alchocol_wrapper_two"
-              *ngFor="let drink of irishWhisky"
-              class="coffee_card"
-            >
+            <!-- *Irish Whiskey container -->
+            <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
+            <div class="alchocol_wrapper_two" *ngFor="let drink of irishWhisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
-                  <strong
-                    [ngClass]="
+                  <strong [ngClass]="
                       drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
-                    "
-                    >{{ drink.price }}</strong
-                  >
+                    ">{{ drink.price }}</strong>
 
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
-                    {{ drink.promotionPrice }}</strong
-                  >
+                    {{ drink.promotionPrice }}</strong>
                 </p>
               </div>
               <div class="description_wrapper">
@@ -445,7 +349,7 @@
                   <strong [ngClass]="
                                                                 drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
                                                               ">{{ drink.price }}</strong>
-            
+
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
                     {{ drink.promotionPrice }}
@@ -465,7 +369,7 @@
                   <strong [ngClass]="
                                                                 drink.promotionPrice ? 'promotionClass' : 'promotionClass2'
                                                               ">{{ drink.price }}</strong>
-            
+
                   <strong *ngIf="drink.promotionPrice">
                     <span class="on_promotion">Promotion</span>
                     {{ drink.promotionPrice }}</strong>
@@ -475,11 +379,11 @@
                 <p>{{ drink.description }}</p>
               </div>
 
-          </div>
+            </div>
           </div>
         </mat-expansion-panel>
       </mat-accordion>
     </div>
   </div>
-  <button class="button_back2" routerLink="/home">Назад / Back</button>
+  <button class="button_back2" routerLink="/home">{{"BACK" | translate}}</button>
 </div>
