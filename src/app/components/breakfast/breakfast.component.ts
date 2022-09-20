@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import bakeryDbJson from 'src/assets/drinks_db/bakeryDb.json';
 
 
@@ -19,9 +20,21 @@ export class BreakfastComponent implements OnInit {
     promotionPrice?: string;
   }[] = bakeryDbJson;
 
-  constructor() {}
+  constructor(
+    public translate: TranslateService
+
+  ) { }
 
   ngOnInit(): void {
+    if (localStorage.length >= 1) {
+      var test = localStorage.getItem("item_key");
+
+      if (test != null) {
+        this.translate.use(test.toString());
+      }
+    }
+
+
     this.breakfast.forEach((element) => {
       if (element.promotionPrice) {
         element.id = -1;

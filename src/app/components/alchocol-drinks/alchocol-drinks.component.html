@@ -6,7 +6,7 @@
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
-            <mat-panel-title class="beerCss"> Пиво / Beer </mat-panel-title>
+            <mat-panel-title class="beerCss"> {{"AlchoholComponent.Beer" | translate}} </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
             <div *ngFor="let drink of beer" class="coffee_card">
@@ -35,7 +35,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="martiniCss">
-              Мартини / Martini
+              {{"AlchoholComponent.Martini" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -65,7 +65,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="digestifsCss">
-              Дигестиви / Digestifs
+              {{"AlchoholComponent.Digestifs" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -94,7 +94,7 @@
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
-            <mat-panel-title class="ginCss"> Џин / Gin </mat-panel-title>
+            <mat-panel-title class="ginCss"> {{"AlchoholComponent.Gin" | translate}} </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
             <div *ngFor="let drink of gin" class="coffee_card">
@@ -122,7 +122,7 @@
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
-            <mat-panel-title class="rumCss"> Рум / Rum </mat-panel-title>
+            <mat-panel-title class="rumCss"> {{"AlchoholComponent.Rum" | translate}} </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
             <div *ngFor="let drink of rum" class="coffee_card">
@@ -151,7 +151,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="liquerCss">
-              Ликери / Liquers
+              {{"AlchoholComponent.Liquers" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -180,7 +180,7 @@
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
-            <mat-panel-title class="vodkaCss"> Вотка / Vodka </mat-panel-title>
+            <mat-panel-title class="vodkaCss"> {{"AlchoholComponent.Vodka" | translate}} </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
             <div *ngFor="let drink of vodka" class="coffee_card">
@@ -209,7 +209,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="cognacCss">
-              Коњак / Cognac
+              {{"AlchoholComponent.Cognac" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -239,7 +239,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="brandyCss">
-              Бренди / Brandy
+              {{"AlchoholComponent.Brandy" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -269,7 +269,7 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="tequilaCss">
-              Текила / Tequila
+              {{"AlchoholComponent.Tequila" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
@@ -299,11 +299,11 @@
           style="background-color: #f1e5cf !important; box-shadow: none">
           <mat-expansion-panel-header>
             <mat-panel-title class="whiskeyCss">
-              Виски / Whisk(e)y
+              {{"AlchoholComponent.Whisk(e)y" | translate}}
             </mat-panel-title>
           </mat-expansion-panel-header>
           <div class="alchocol_wrapper_two">
-            <p class="alchocol_type">Шкотско виски / Scotch whisky</p>
+            <p class="alchocol_type">{{"AlchoholComponent.Scotch whisky" | translate}}</p>
             <div *ngFor="let drink of whisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -322,7 +322,7 @@
               </div>
             </div>
             <!-- *Irish Whiskey container -->
-            <p class="alchocol_type">Ирско Виски / Irish Whiskey</p>
+            <p class="alchocol_type">{{"AlchoholComponent.Irish Whiskey" | translate}}</p>
             <div class="alchocol_wrapper_two" *ngFor="let drink of irishWhisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -341,7 +341,7 @@
               </div>
             </div>
             <!-- *Bourbon container -->
-            <p class="alchocol_type">Бурбон Виски / Bourbon Whiskey</p>
+            <p class="alchocol_type">{{"AlchoholComponent.Bourbon Whiskey" | translate}}</p>
             <div class="alchocol_wrapper_two" *ngFor="let drink of bourbonWhisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
@@ -361,7 +361,7 @@
               </div>
             </div>
             <!-- *American container -->
-            <p class="alchocol_type">Американско Виски / American Whiskey</p>
+            <p class="alchocol_type">{{"AlchoholComponent.American Whiskey" | translate}}</p>
             <div class="alchocol_wrapper_two" *ngFor="let drink of americanWhisky" class="coffee_card">
               <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import alcoholDbJson from 'src/assets/drinks_db/alcoholDb.json';
 
 @Component({
@@ -135,10 +136,22 @@ export class AlchocolDrinksComponent implements OnInit {
     promotionPrice?: string;
   }[] = alcoholDbJson[13];
 
-  constructor() {}
+  constructor(
+    public translate: TranslateService
+
+  ) { }
 
 
   ngOnInit(): void {
+    if (localStorage.length >= 1) {
+      var test = localStorage.getItem("item_key");
+
+      if (test != null) {
+        this.translate.use(test.toString());
+      }
+    }
+
+
     this.beerPromotion();
     this.martiniPromotion();
     this.digestPromotion();

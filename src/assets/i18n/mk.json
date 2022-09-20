@@ -46,5 +46,22 @@
     "Spinach pie": "Пита со спанаќ",
     "Breakfast combo": "Комбинација за појадок",
     "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Кафе / Чај + Цеден сок + Кроасан / Пита со спанаќ"
+  },
+  "AlchoholComponent": {
+      "Beer": "Пиво",
+      "Martini": "Мартини",
+      "Digestifs": "Дигестиви",
+      "Gin": "Џин",
+      "Rum": "Рум",
+      "Liquers": "Ликери",
+      "Vodka": "Вотка",
+      "Cognac": "Коњак",
+      "Brandy": "Бренди",
+      "Tequila": "Текила",
+      "Whisk(e)y": "Виски",
+      "Scotch whisky": "Шкотско виски",
+      "Irish Whiskey": "Ирско Виски",
+      "Bourbon Whiskey": "Бурбон Виски",
+      "American Whiskey": "Американско Виски"
   }
 }

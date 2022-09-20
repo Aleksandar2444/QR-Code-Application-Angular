@@ -45,6 +45,23 @@
     "Spinach pie": "Spinach pie",
     "Breakfast combo": "Breakfast combo",
     "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Coffee / Tea + Fresh Juice + Croissant / Spinach pie"
+  },
+  "AlchoholComponent": {
+    "Beer": "Beer",
+    "Martini": "Martini",
+    "Digestifs": "Digestifs",
+    "Gin": "Gin",
+    "Rum": "Rum",
+    "Liquers": "Liquers",
+    "Vodka": "Vodka",
+    "Cognac": "Cognac",
+    "Brandy": "Brandy",
+    "Tequila": "Tequila",
+    "Whisk(e)y": "Whisk(e)y",
+    "Scotch whisky": "Scotch Whiskey",
+    "Irish Whiskey": "Irish Whiskey",
+    "Bourbon Whiskey": "Bourbon Whiskey",
+    "American Whiskey": "American Whiskey"
   }
 }
 

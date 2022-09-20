@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import nonAlcoholicDrinksDbJson from 'src/assets/drinks_db/nonAlcoholicDrinksDb.json';
 import freshJuicesDbJson from 'src/assets/drinks_db/freshJuicesDb.json';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-non-alcoholic-drinks',
@@ -26,11 +27,23 @@ export class NonAlcoholicDrinksComponent implements OnInit {
     description?: string;
     promotionPrice?: string;
   }[] = freshJuicesDbJson;
-  constructor() {}
+  constructor(
+    public translate: TranslateService
+
+  ) { }
 
   toggle: boolean = false;
 
   ngOnInit(): void {
+    if (localStorage.length >= 1) {
+      var test = localStorage.getItem("item_key");
+
+      if (test != null) {
+        this.translate.use(test.toString());
+      }
+    }
+
+
     //Non alcoholic drinks
     this.nonAlcoholicDrinks.forEach((element) => {
       if (element.promotionPrice) {
