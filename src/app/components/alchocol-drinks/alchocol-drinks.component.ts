@@ -136,6 +136,22 @@ export class AlchocolDrinksComponent implements OnInit {
     promotionPrice?: string;
   }[] = alcoholDbJson[13];
 
+  public spritz: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[14];
+
+  public GinAndTonics: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[15];
+
   constructor(
     public translate: TranslateService
 
@@ -166,6 +182,8 @@ export class AlchocolDrinksComponent implements OnInit {
     this.irishPromotion();
     this.burbonPromotion();
     this.americanPromotion();
+    this.spritzPromotion();
+    this.ginAndTonicPromotion();
   }
 
   beerPromotion(): void {
@@ -215,6 +233,7 @@ export class AlchocolDrinksComponent implements OnInit {
   rumPromotion(): void {
     this.rum.forEach((element) => {
       if (element.promotionPrice) {
+
         element.id = -1;
         element.id++;
       }
@@ -320,5 +339,23 @@ export class AlchocolDrinksComponent implements OnInit {
     });
 
     this.americanWhisky.sort((a, b) => a.id - b.id);
+  }
+
+  spritzPromotion(): void {
+    this.spritz.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+      }
+    });
+  }
+
+  ginAndTonicPromotion(): void {
+    this.GinAndTonics.forEach((element) => {
+      if (element.promotionPrice) {
+        element.id = -1;
+        element.id++;
+      }
+    });
   }
 }

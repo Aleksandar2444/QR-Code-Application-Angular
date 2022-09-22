@@ -28,7 +28,7 @@
         "Red Bull": "Red Bull",
         "Jana Water": "Jana Water",
         "Fresh Juices": "Fresh Juices",
-        "(squeesed lemon with tonic)": "(squeesed lemon with tonic)",
+        "(squeesed lemon with tonic)": "(squeesed lemon with soda water)",
         "(pineapple, apple, lemon, ginger)": "(pineapple, apple, lemon, ginger)",
         "(orange, pomegranate, apple)": "(orange, pomegranate, apple)",
         "(ginger, lemon, turmeric, black pepper)": "(ginger, lemon, turmeric, black pepper)",
@@ -48,7 +48,7 @@
   },
   "AlchoholComponent": {
     "Beer": "Beer",
-    "Martini": "Martini",
+    "Martini": "Vermouth",
     "Digestifs": "Digestifs",
     "Gin": "Gin",
     "Rum": "Rum",
@@ -61,7 +61,9 @@
     "Scotch whisky": "Scotch Whiskey",
     "Irish Whiskey": "Irish Whiskey",
     "Bourbon Whiskey": "Bourbon Whiskey",
-    "American Whiskey": "American Whiskey"
+    "American Whiskey": "American Whiskey",
+    "Spritz": "Spritz's",
+    "Gin&Tonics": "Gin Tonics"
   }
 }
 

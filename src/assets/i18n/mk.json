@@ -48,7 +48,7 @@
   },
   "AlchoholComponent": {
     "Beer": "Пиво",
-    "Martini": "Мартини",
+    "Martini": "Вермут",
     "Digestifs": "Дигестиви",
     "Gin": "Џин",
     "Rum": "Рум",
@@ -61,6 +61,8 @@
     "Scotch whisky": "Шкотско виски",
     "Irish Whiskey": "Ирско Виски",
     "Bourbon Whiskey": "Бурбон Виски",
-    "American Whiskey": "Американско Виски"
+    "American Whiskey": "Американско Виски",
+    "Spritz": "Шприцери",
+    "Gin&Tonics": "Џин Тоници"
   }
 }
