@@ -11,6 +11,8 @@ export class AlchocolDrinksComponent implements OnInit {
 
   public panelOpenState: boolean = true;
 
+  public sortedRums: [number];
+
   //*Beer
   public beer: {
     id: number;
@@ -168,6 +170,8 @@ export class AlchocolDrinksComponent implements OnInit {
     }
 
 
+
+
     this.beerPromotion();
     this.martiniPromotion();
     this.digestPromotion();
@@ -187,174 +191,296 @@ export class AlchocolDrinksComponent implements OnInit {
   }
 
   beerPromotion(): void {
+    this.beer.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.beer.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.beer.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.beer.sort((a, b) => a.id - b.id);
   }
 
   martiniPromotion(): void {
+    this.martini.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.martini.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.martini.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.martini.sort((a, b) => a.id - b.id);
   }
 
   digestPromotion(): void {
+    this.digestifs.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.digestifs.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.digestifs.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.digestifs.sort((a, b) => a.id - b.id);
   }
 
   ginPromotion(): void {
+    this.gin.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.gin.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.gin.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.gin.sort((a, b) => a.id - b.id);
   }
 
   rumPromotion(): void {
+    this.rum.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.rum.forEach((element) => {
+
       if (element.promotionPrice) {
 
         element.id = -1;
         element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.rum.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
+
       }
+
+
+      // this.rum.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     });
 
-    this.rum.sort((a, b) => a.id - b.id);
+
   }
 
   liquerPromotion(): void {
+    this.liquers.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.liquers.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.liquers.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.liquers.sort((a, b) => a.id - b.id);
   }
 
   vodkaPromotion(): void {
+    this.vodka.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.vodka.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.vodka.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.vodka.sort((a, b) => a.id - b.id);
   }
 
   kognacPromotion(): void {
+    this.cognac.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.cognac.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.cognac.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.cognac.sort((a, b) => a.id - b.id);
   }
 
   brendiPromotion(): void {
+    this.brandy.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.brandy.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.brandy.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.brandy.sort((a, b) => a.id - b.id);
   }
 
   tequilaPromotion(): void {
+    this.tequila.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.tequila.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.tequila.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.tequila.sort((a, b) => a.id - b.id);
   }
 
   whiskeyPromotion(): void {
+    this.whisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.whisky.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.whisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.whisky.sort((a, b) => a.id - b.id);
   }
 
   irishPromotion(): void {
+    this.irishWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.irishWhisky.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.irishWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.irishWhisky.sort((a, b) => a.id - b.id);
   }
 
   burbonPromotion(): void {
+    this.bourbonWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.bourbonWhisky.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.bourbonWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.bourbonWhisky.sort((a, b) => a.id - b.id);
   }
 
   americanPromotion(): void {
+    this.americanWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.americanWhisky.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.americanWhisky.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.americanWhisky.sort((a, b) => a.id - b.id);
   }
 
   spritzPromotion(): void {
+    this.spritz.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.spritz.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.spritz.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
   }
 
   ginAndTonicPromotion(): void {
+    this.GinAndTonics.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
     this.GinAndTonics.forEach((element) => {
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.GinAndTonics.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
   }

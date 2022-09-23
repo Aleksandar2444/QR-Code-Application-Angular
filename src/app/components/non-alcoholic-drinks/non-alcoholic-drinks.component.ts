@@ -45,24 +45,35 @@ export class NonAlcoholicDrinksComponent implements OnInit {
 
 
     //Non alcoholic drinks
+    this.nonAlcoholicDrinks.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.nonAlcoholicDrinks.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.nonAlcoholicDrinks.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.nonAlcoholicDrinks.sort((a, b) => a.id - b.id);
 
     //Fresh juices
+    this.freshJuices.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.freshJuices.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.freshJuices.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.freshJuices.sort((a, b) => a.id - b.id);
+
   }
 
   OpenEntity() {

@@ -57,13 +57,27 @@
     "Cognac": "Cognac",
     "Brandy": "Brandy",
     "Tequila": "Tequila",
-    "Whisk(e)y": "Whisk(e)y",
+    "Whisk(e)y": "Whiskey",
     "Scotch whisky": "Scotch Whiskey",
     "Irish Whiskey": "Irish Whiskey",
     "Bourbon Whiskey": "Bourbon Whiskey",
     "American Whiskey": "American Whiskey",
     "Spritz": "Spritz's",
     "Gin&Tonics": "Gin Tonics"
+  },
+  "CocktailComponent": {
+    "Signature": "Signature Cocktails",
+    "Classic": "Classic Cocktails",
+    "Rum, Mango, Orgeat, Lemon, Pineapple": "Rum, Mango, Orgeat, Lemon, Pineapple",
+    "Vodka, Lemon, Rasberry": "Vodka, Lemon, Rasberry",
+    "Archers, Vodka, Lemon, Pineapple": "Archers, Vodka, Lemon, Pineapple",
+    "Rum, Apple, Cinnamon, Lemon": "Rum, Apple, Cinnamon, Lemon",
+    "Vodkta, Apple, Pineapple, Lemon": "Vodkta, Apple, Pineapple, Lemon",
+    "Vodka, Martini, Berry`s, Cranberry, Lemon": "Vodka, Martini, Berry`s, Cranberry, Lemon",
+    "Gin, Lavanda, Lemon, Blueberry": "Gin, Lavanda, Lemon, Blueberry"
+
+
+
   }
 }
 

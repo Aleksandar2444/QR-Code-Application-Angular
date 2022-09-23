@@ -44,7 +44,23 @@
     {
       "id": 9,
       "name": "Гинес / Guinness 0,33ml",
-      "price": "200ден."
+      "price": "200ден.",
+      "promotionPrice": ""
+    },
+    {
+      "id": 72,
+      "name": "Лефе Блонд / Leffe Blonde 0,33ml",
+      "price": "160ден."
+    },
+    {
+      "id": 73,
+      "name": "Карлсберг / Carlsberg 0,33ml",
+      "price": "100ден."
+    },
+    {
+      "id": 74,
+      "name": "Стела / Stella 0,33ml",
+      "price": "110ден."
     }
   ],
   [
@@ -124,7 +140,7 @@
       "id": 21,
       "name": "Бакарди / Bacardi 0,4ml",
       "price": "120ден.",
-      "promotionPrice": ""
+      "promotionPrice": "110ден."
     },
     {
       "id": 67,
@@ -194,7 +210,8 @@
     {
       "id": 58,
       "name": "Греј Гус / Grey Goose 0,4ml",
-      "price": "350ден."
+      "price": "350ден.",
+      "promotionPrice": "320ден."
     }
   ],
   [

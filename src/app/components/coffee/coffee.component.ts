@@ -49,47 +49,64 @@ export class CoffeeComponent implements OnInit {
 
   constructor(
     public translate: TranslateService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
-    if(localStorage.length >= 1) {
+    if (localStorage.length >= 1) {
       var test = localStorage.getItem("item_key");
 
-      if(test != null) {
-      this.translate.use(test.toString());
+      if (test != null) {
+        this.translate.use(test.toString());
       }
     }
 
 
     //Coffee
+    this.coffee.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.coffee.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.coffee.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.coffee.sort((a, b) => a.id - b.id);
+
 
     //Coffee With Milk
+    this.coffeeWithMilk.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.coffeeWithMilk.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.coffeeWithMilk.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.coffeeWithMilk.sort((a, b) => a.id - b.id);
+
 
     //Drinks Without Coffein
+    this.drinksWithoutCoffein.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.drinksWithoutCoffein.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.drinksWithoutCoffein.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.drinksWithoutCoffein.sort((a, b) => a.id - b.id);
 
     //Weekend Agenda
     const today = new Date();

@@ -35,13 +35,18 @@ export class BreakfastComponent implements OnInit {
     }
 
 
+    this.breakfast.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.breakfast.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.breakfast.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.breakfast.sort((a, b) => a.id - b.id);
   }
 }

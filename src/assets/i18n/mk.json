@@ -64,5 +64,16 @@
     "American Whiskey": "Американско Виски",
     "Spritz": "Шприцери",
     "Gin&Tonics": "Џин Тоници"
+  },
+  "CocktailComponent": {
+    "Signature": "Потписни Коктели",
+    "Classic": "Класични Коктели",
+    "Rum, Mango, Orgeat, Lemon, Pineapple": "Рум, Манго, Оргеат, Лимон, Ананас",
+    "Vodka, Lemon, Rasberry": "Водка, Лимон, Малина",
+    "Archers, Vodka, Lemon, Pineapple": "Арчерс, Водка, Лимон, Ананас",
+    "Rum, Apple, Cinnamon, Lemon": "Рум, Јаболко, Цимет, Лимон",
+    "Vodkta, Apple, Pineapple, Lemon": "Водка, Јаболко, Ананас, Лимон",
+    "Vodka, Martini, Berry`s, Cranberry, Lemon": "Водка, Мартини, Малини, Брусница, Лимон",
+    "Gin, Lavanda, Lemon, Blueberry": "Џин, Лаванда, Лимон, Боровинка"
   }
 }

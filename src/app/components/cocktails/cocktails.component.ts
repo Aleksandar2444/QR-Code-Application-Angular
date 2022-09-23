@@ -24,7 +24,7 @@ export class CocktailsComponent implements OnInit {
     promotionPrice?: string;
   }[] = cocktailsDbJson[1];
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
     if (localStorage.length >= 1) {
@@ -35,22 +35,34 @@ export class CocktailsComponent implements OnInit {
       }
     }
 
+    this.cocktails.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.cocktails.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.cocktails.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.cocktails.sort((a, b) => a.id - b.id);
 
+
+    this.classicCocktails.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
     this.classicCocktails.forEach((element) => {
+
       if (element.promotionPrice) {
-        element.id = -1;
-        element.id++;
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        this.classicCocktails.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
       }
     });
 
-    this.classicCocktails.sort((a, b) => a.id - b.id);
+
   }
 }
