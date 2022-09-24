@@ -75,20 +75,6 @@ body {
   padding: 0 24px 0px !important;
 }
 
-.mat-menu-trigger {
-  padding: 0;
-  margin-left: 24px !important;
-  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
-  width: 100px;
-  height: 35px;
-  border: none;
-  border-radius: 3px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  color: white;
-}
-
 .mat-button {
   padding: 0 !important;
 }
