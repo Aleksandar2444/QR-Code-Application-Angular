@@ -7,7 +7,7 @@
   "Non-alcoholic Drinks": "Non-alcoholic Drinks",
   "Alcoholic Drinks": "Alcoholic Drinks",
   "COCKTAILS": "COCKTAILS",
-  "Bakery from 09:30h - 12:00h": "Bakery from 09:30h - 12:00h",
+  "Bakery from 09:30h - 12:00h": "Bakery",
   "CoffeeComponent": {
     "coffeeTitle": "Coffee",
     "cofeeWithMilk": "Coffee with milk",
@@ -15,27 +15,27 @@
     "Tea": "Tea",
     "Warm Chocolate": "Warm Chocolate"
   },
-     "NonAlcoholicDrinksCom": {
-        "Rosa Water": "Rosa Water",
-        "Dobra Voda Water": "Dobra Voda Water",
-        "Coca Cola": "Coca Cola",
-        "Fanta": "Fanta",
-        "Schweppes": "Schweppes",
-        "Tonic": "Tonic",
-        "Cedevita": "Cedevita",
-        "Ice Tea": "Ice Tea",
-        "Juices": "Juices",
-        "Red Bull": "Red Bull",
-        "Jana Water": "Jana Water",
-        "Fresh Juices": "Fresh Juices",
-        "(squeesed lemon with tonic)": "(squeesed lemon with soda water)",
-        "(pineapple, apple, lemon, ginger)": "(pineapple, apple, lemon, ginger)",
-        "(orange, pomegranate, apple)": "(orange, pomegranate, apple)",
-        "(ginger, lemon, turmeric, black pepper)": "(ginger, lemon, turmeric, black pepper)",
-        "Orange Juice": "Orange Juice 250ml",
-        "Apple Juice": "Apple Juice 250ml",
-        "Pineaple Juice": "Pineaple Juice 250ml",
-        "Pomegranate Juice": "Pomegranate Juice 250ml"
+  "NonAlcoholicDrinksCom": {
+    "Rosa Water": "Rosa Water",
+    "Dobra Voda Water": "Dobra Voda Water",
+    "Coca Cola": "Coca Cola",
+    "Fanta": "Fanta",
+    "Schweppes": "Schweppes",
+    "Tonic": "Tonic",
+    "Cedevita": "Cedevita",
+    "Ice Tea": "Ice Tea",
+    "Juices": "Juices",
+    "Red Bull": "Red Bull",
+    "Jana Water": "Jana Water",
+    "Fresh Juices": "Fresh Juices",
+    "(squeesed lemon with tonic)": "(squeesed lemon with soda water)",
+    "(pineapple, apple, lemon, ginger)": "(pineapple, apple, lemon, ginger)",
+    "(orange, pomegranate, apple)": "(orange, pomegranate, apple)",
+    "(ginger, lemon, turmeric, black pepper)": "(ginger, lemon, turmeric, black pepper)",
+    "Orange Juice": "Orange Juice 250ml",
+    "Apple Juice": "Apple Juice 250ml",
+    "Pineaple Juice": "Pineaple Juice 250ml",
+    "Pomegranate Juice": "Pomegranate Juice 250ml"
   },
   "BakeryComponent": {
     "Banana Bread": "Banana Bread",
@@ -44,7 +44,8 @@
     "Croissant": "Croissant",
     "Spinach pie": "Spinach pie",
     "Breakfast combo": "Breakfast combo",
-    "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Coffee / Tea + Fresh Juice + Croissant / Spinach pie"
+    "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Coffee / Tea + Fresh Juice + Croissant / Spinach pie",
+    "BreakfastCombo": "*From 09:30h to 12:00h"
   },
   "AlchoholComponent": {
     "Beer": "Beer",
@@ -63,7 +64,13 @@
     "Bourbon Whiskey": "Bourbon Whiskey",
     "American Whiskey": "American Whiskey",
     "Spritz": "Spritz's",
-    "Gin&Tonics": "Gin Tonics"
+    "Gin&Tonics": "Gin Tonics",
+    "ApetisaniButton": "Appetizing",
+    "Almonds": "Almonds",
+    "Hazelnuts": "Hazelnuts",
+    "Cashew nuts": "Cashew nuts",
+    "Pistachios": "Pistachios",
+    "Mix": "Mix"
   },
   "CocktailComponent": {
     "Signature": "Signature Cocktails",
@@ -104,5 +111,3 @@
 
   }
 }
-
-

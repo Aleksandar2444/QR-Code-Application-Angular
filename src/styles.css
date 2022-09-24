@@ -75,6 +75,10 @@ body {
   padding: 0 24px 0px !important;
 }
 
+.mat-button {
+  padding: 0 !important;
+}
+
 .coffee_container {
   display: flex;
   flex-direction: column;

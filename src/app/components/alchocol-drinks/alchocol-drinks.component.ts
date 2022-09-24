@@ -154,6 +154,14 @@ export class AlchocolDrinksComponent implements OnInit {
     promotionPrice?: string;
   }[] = alcoholDbJson[15];
 
+  public Apetisani: {
+    id: number;
+    name: string;
+    price: string;
+    description?: string;
+    promotionPrice?: string;
+  }[] = alcoholDbJson[16];
+
   constructor(
     public translate: TranslateService
 

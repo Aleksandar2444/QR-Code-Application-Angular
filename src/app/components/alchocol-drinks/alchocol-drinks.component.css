@@ -1,15 +1,3 @@
-/* * {
-  background-color: #f1e5cf !important;
-
-}
-
-*/
-/* body {
-  background-color: #f1e5cf !important;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-*/
 .alchocol_main_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -44,6 +32,41 @@
 .alchocol_wrapper_one button:active {
   transform: translateY(4px);
   -webkit-tap-highlight-color: transparent;
+}
+
+.apetisani_wrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.apetisan_card {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.apetisan_card div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mat-menu-trigger {
+  padding: 0;
+  margin-left: 24px !important;
+  background: linear-gradient(to bottom, #000000 0%, #363232 100%);
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
 }
 
 .beerCss {
@@ -223,14 +246,10 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgb(51, 51, 51) 0px 0px 0px 2px;
 }
 
-
-
 p,
 h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 @media only screen and (min-width: 600px) {
   .alchocol_main_wrapper {

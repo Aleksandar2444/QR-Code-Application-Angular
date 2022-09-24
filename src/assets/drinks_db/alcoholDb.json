@@ -407,5 +407,32 @@
       "name": "Tanqueray Tonic",
       "price": "200ден."
     }
+  ],
+  [
+    {
+      "id": 75,
+      "name": "Almonds",
+      "price": "150ден."
+    },
+    {
+      "id": 76,
+      "name": "Hazelnuts",
+      "price": "150ден."
+    },
+    {
+      "id": 77,
+      "name": "Cashew nuts",
+      "price": "150ден."
+    },
+    {
+      "id": 78,
+      "name": "Pistachios",
+      "price": "150ден."
+    },
+    {
+      "id": 79,
+      "name": "Mix",
+      "price": "150ден."
+    }
   ]
 ]
