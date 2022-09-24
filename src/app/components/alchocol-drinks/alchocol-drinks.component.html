@@ -605,16 +605,12 @@
               {{ "AlchoholComponent.Gin&Tonics" | translate }}
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <div
-            class="alchocol_wrapper_two"
-            style="background-image: url('../../../assets/images/Gins.png')"
-          >
+          <div class="alchocol_wrapper_two">
             <div *ngFor="let drink of GinAndTonics" class="coffee_card">
-              <div class="name_and_price_wrapper" style="color: white">
+              <div class="name_and_price_wrapper">
                 <h3 class="alchocol_name">{{ drink.name }}</h3>
                 <p>
                   <strong
-                    style="color: white"
                     [ngClass]="
                       drink.promotionPrice
                         ? 'promotionClass'

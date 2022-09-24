@@ -175,7 +175,7 @@
   width: 100px;
   font-size: 15px;
   font-family: "Mali";
-    /* font-family: "Mali", cursive; */
+  /* font-family: "Mali", cursive; */
   background-color: #343a40;
   border-color: #343a40;
   text-align: center;
@@ -252,13 +252,16 @@
   }
   .error_img img {
     width: 100%;
-    min-height: 65vh;
+    height: 500px;
     object-fit: cover;
   }
   .error_img h1 {
     font-size: 40px;
     text-align: center;
     padding-top: 20px;
+    color: #373131;
+  }
+  .follow_us {
     color: #373131;
   }
   .footer {
