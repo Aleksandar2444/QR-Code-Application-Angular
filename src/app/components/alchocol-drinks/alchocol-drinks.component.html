@@ -4,6 +4,29 @@
   </button>
   <div class="alchocol_main_wrapper">
     <div class="alchocol_wrapper_one">
+      <button mat-button [matMenuTriggerFor]="afterMenu">Apetisani</button>
+      <mat-menu #afterMenu="matMenu" xPosition="after">
+        <div *ngFor="let apetisan of Apetisani" class="coffee_card">
+          <div>
+            <h3 class="alchocol_name">{{ !apetisan.name ? apetisan.name : "AlchoholComponent." +apetisan.name | translate}}
+            </h3>
+            <p>
+              <strong [ngClass]="
+                                apetisan.promotionPrice
+                                      ? 'promotionClass'
+                                      : 'promotionClass2'
+                                  ">{{ apetisan.price }}</strong>
+
+              <strong *ngIf="apetisan.promotionPrice">
+                <span class="on_promotion">Promotion</span>
+                {{ apetisan.promotionPrice }}</strong>
+            </p>
+          </div>
+          <div class="description_wrapper">
+            <p>{{ apetisan.description }}</p>
+          </div>
+        </div>
+      </mat-menu>
       <mat-accordion>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" hideToggle
           style="background-color: #f1e5cf !important; box-shadow: none">

@@ -63,7 +63,13 @@
     "Bourbon Whiskey": "Bourbon Whiskey",
     "American Whiskey": "American Whiskey",
     "Spritz": "Spritz's",
-    "Gin&Tonics": "Gin Tonics"
+    "Gin&Tonics": "Gin Tonics",
+    "ApetisaniButton": "Apetisani",
+    "Almonds": "Almonds",
+    "Hazelnuts": "Hazelnuts",
+    "Cashew nuts": "Cashew nuts",
+    "Pistachios": "Pistachios",
+    "Mix": "Mix"
   },
   "CocktailComponent": {
     "Signature": "Signature Cocktails",
@@ -75,9 +81,6 @@
     "Vodkta, Apple, Pineapple, Lemon": "Vodkta, Apple, Pineapple, Lemon",
     "Vodka, Martini, Berry`s, Cranberry, Lemon": "Vodka, Martini, Berry`s, Cranberry, Lemon",
     "Gin, Lavanda, Lemon, Blueberry": "Gin, Lavanda, Lemon, Blueberry"
-
-
-
   }
 }
 

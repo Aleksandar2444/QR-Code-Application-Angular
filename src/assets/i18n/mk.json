@@ -63,7 +63,13 @@
     "Bourbon Whiskey": "Бурбон Виски",
     "American Whiskey": "Американско Виски",
     "Spritz": "Шприцери",
-    "Gin&Tonics": "Џин Тоници"
+    "Gin&Tonics": "Џин Тоници",
+    "ApetisaniButton": "Апетисани",
+    "Almonds": "Бадеми",
+    "Hazelnuts": "Лешници",
+    "Cashew nuts": "Индиски",
+    "Pistachios": "Ф'стаци",
+    "Mix": "Микс"
   },
   "CocktailComponent": {
     "Signature": "Потписни Коктели",
