@@ -5,7 +5,9 @@
   <div class="alchocol_main_wrapper">
     <div class="alchocol_wrapper_one">
       <div class="apetisani_wrapper">
-        <button mat-button [matMenuTriggerFor]="afterMenu">Apetisani</button>
+        <button mat-button [matMenuTriggerFor]="afterMenu">
+          {{ "AlchoholComponent.ApetisaniButton" | translate }}
+        </button>
         <mat-menu #afterMenu="matMenu" xPosition="after">
           <div
             *ngFor="let apetisan of Apetisani"
