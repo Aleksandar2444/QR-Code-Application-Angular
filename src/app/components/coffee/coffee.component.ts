@@ -16,6 +16,7 @@ export class CoffeeComponent implements OnInit {
   toggleCoffee: boolean = false;
   toggleCoffeeWithMilk: boolean = false;
   toggleDrinksWithoutCoffein: boolean = false;
+  nineOclock: boolean = false;
 
   public today: Date = new Date();
   public element = document.body;
@@ -59,7 +60,6 @@ export class CoffeeComponent implements OnInit {
         this.translate.use(test.toString());
       }
     }
-
 
     //Coffee
     this.coffee.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
