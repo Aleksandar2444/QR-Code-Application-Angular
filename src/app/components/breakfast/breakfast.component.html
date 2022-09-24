@@ -14,7 +14,15 @@
         </p>
       </div>
       <div class="description_wrapper">
-        <p>{{ !food.description ? food.description : "BakeryComponent."+food.description | translate }}</p>
+        <div *ngIf="!food.description?.startsWith('Coffee')">
+          <p>{{ !food.description ? food.description :
+            "BakeryComponent."+food.description | translate }}</p>
+        </div>
+        <div *ngIf="food.description?.startsWith('Coffee')">
+          <p style="font-weight: bold; font-style: italic;">{{"BakeryComponent.BreakfastCombo" | translate}}</p>
+          <p>{{ !food.description ? food.description :
+            "BakeryComponent."+food.description | translate }}</p>
+        </div>
       </div>
     </div>
   </div>

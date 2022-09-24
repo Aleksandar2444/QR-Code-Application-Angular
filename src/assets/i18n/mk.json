@@ -7,7 +7,7 @@
   "Non-alcoholic Drinks": "Безалкохолни Пијалоци",
   "Alcoholic Drinks": "Алкохолни Пијалоци",
   "COCKTAILS": "КОКТЕЛИ",
-  "Bakery from 09:30h - 12:00h": "Пекара од 09:30ч - 12:00ч",
+  "Bakery from 09:30h - 12:00h": "Пекара",
   "CoffeeComponent": {
     "coffeeTitle": "Кафе",
     "cofeeWithMilk": "Кафе со млеко",
@@ -44,7 +44,8 @@
     "Croissant": "Кроасан",
     "Spinach pie": "Пита со спанаќ",
     "Breakfast combo": "Комбинација за појадок",
-    "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Кафе / Чај + Цеден сок + Кроасан / Пита со спанаќ"
+    "Coffee / Tea + Fresh Juice + Croissant / Spinach pie": "Кафе / Чај + Цеден сок + Кроасан / Пита со спанаќ",
+    "BreakfastCombo": "*Од 09:30ч до 12:00ч"
   },
   "AlchoholComponent": {
     "Beer": "Пиво",
