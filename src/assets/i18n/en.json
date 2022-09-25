@@ -8,12 +8,15 @@
   "Alcoholic Drinks": "Alcoholic Drinks",
   "COCKTAILS": "COCKTAILS",
   "Bakery from 09:30h - 12:00h": "Bakery",
+  "WeekendText": "*We do not serve coffee after 21:00h Friday and Saturday",
+  "CocktailNightBtn": "Cocktail Night",
   "CoffeeComponent": {
     "coffeeTitle": "Coffee",
     "cofeeWithMilk": "Coffee with milk",
     "drinksWithoutCoffeein": "Drinks without Coffeein",
     "Tea": "Tea",
-    "Warm Chocolate": "Warm Chocolate"
+    "Warm Chocolate": "Warm Chocolate",
+    "(herbal or fruity, ask the staff)": "(herbal or fruity, ask the staff)"
   },
   "NonAlcoholicDrinksCom": {
     "Rosa Water": "Rosa Water",
@@ -105,7 +108,8 @@
     "Smirnoff vodka, Lemon juice, Simple syrup": "Smirnoff vodka, Lemon juice, Simple syrup",
     "Bacardi rum, Lime, Simple syrup": "Bacardi rum, Lime, Simple syrup",
     "Siera tequila, Orange juice, Grenadine": "Siera tequila, Orange juice, Grenadine",
-    "Gin, Lemon juice, Simple syrup": "Gin, Lemon juice, Simple syrup"
+    "Gin, Lemon juice, Simple syrup": "Gin, Lemon juice, Simple syrup",
+    "Whisky, Angostura bitters, Orange bitters, Symple syrup": "Whisky, Angostura bitters, Orange bitters, Symple syrup"
 
 
 

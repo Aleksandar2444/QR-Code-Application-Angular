@@ -107,6 +107,9 @@ export class CoffeeComponent implements OnInit {
       }
     });
 
+    // this.today.setDate(this.today.getDate() + 7);
+    // this.today.setHours(1, 0, 0);
+
 
     //Weekend Agenda
     const today = new Date();
@@ -121,8 +124,8 @@ export class CoffeeComponent implements OnInit {
     const seventh = first + 6;
     const sunday = new Date(today.setDate(seventh));
 
-    const eight = first - 1;
-    const secondSunday = new Date(today.setDate(eight));
+    // const eight = first - 1;
+    const secondSunday = new Date();
 
     //Weekend logic
     if (this.today.getDate() === friday.getDate()) {
@@ -164,5 +167,8 @@ export class CoffeeComponent implements OnInit {
     } else {
       this.cocktailBool = false;
     }
+
+    // this.cocktailBool = false;
   }
+
 }

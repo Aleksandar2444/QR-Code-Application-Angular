@@ -30,25 +30,37 @@
 .weekend_container p {
   margin: 10px 10px;
   text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.weekend_container hr {
-  width: 90%;
-  background-color: sandybrown;
-}
+// .weekend_container hr {
+//   width: 90%;
+//   background-color: sandybrown;
+// }
 
-.weekend_container div p {
-  position: relative;
-  top: 100px;
-  font-size: 25px;
-  margin: 0;
-  color: aqua;
-  opacity: 0.5;
-}
+// .weekend_container div p {
+//   position: relative;
+//   top: 100px;
+//   font-size: 25px;
+//   margin: 0;
+//   color: aqua;
+//   opacity: 0.5;
+// }
 
-.weekend_container div img {
-  object-fit: cover;
-  width: 100%;
+// .weekend_container div img {
+//   object-fit: cover;
+//   width: 100%;
+// }
+
+.weekend_container{
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom:  3px solid black;
+    margin: 0 5px;
 }
 
 p,

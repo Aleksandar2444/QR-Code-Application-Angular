@@ -50,17 +50,17 @@
     {
       "id": 72,
       "name": "Лефе Блонд / Leffe Blonde 0,33ml",
-      "price": "160ден."
+      "price": "140ден."
     },
     {
       "id": 73,
       "name": "Карлсберг / Carlsberg 0,33ml",
-      "price": "100ден."
+      "price": "120ден."
     },
     {
       "id": 74,
       "name": "Стела / Stella 0,33ml",
-      "price": "110ден."
+      "price": "120ден."
     }
   ],
   [
@@ -140,7 +140,7 @@
       "id": 21,
       "name": "Бакарди / Bacardi 0,4ml",
       "price": "120ден.",
-      "promotionPrice": "110ден."
+      "promotionPrice": ""
     },
     {
       "id": 67,
@@ -211,7 +211,7 @@
       "id": 58,
       "name": "Греј Гус / Grey Goose 0,4ml",
       "price": "350ден.",
-      "promotionPrice": "320ден."
+      "promotionPrice": ""
     }
   ],
   [

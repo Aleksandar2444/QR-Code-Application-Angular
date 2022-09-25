@@ -17,7 +17,7 @@
       "name": "Mango Tai",
       "price": "250ден.",
       "description": "Rum, Mango, Orgeat, Lemon, Pineapple",
-      "promotionPrice": "210ден."
+      "promotionPrice": ""
     },
     {
       "id": 4,
@@ -97,7 +97,7 @@
       "id": 16,
       "name": "Old Fashion",
       "price": "250ден.",
-      "description": ""
+      "description": "Whisky, Angostura bitters, Orange bitters, Symple syrup"
     },
     {
       "id": 17,
@@ -163,7 +163,7 @@
       "id": 27,
       "name": "Cuba Libre",
       "price": "200ден.",
-      "promotionPrice": "180den.",
+      "promotionPrice": "",
       "description": "Bacardi rum, Lime, Coca-Cola"
     },
     {
