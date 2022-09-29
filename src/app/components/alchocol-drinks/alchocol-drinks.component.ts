@@ -196,6 +196,7 @@ export class AlchocolDrinksComponent implements OnInit {
     this.americanPromotion();
     this.spritzPromotion();
     this.ginAndTonicPromotion();
+    this.apetizingPromotion();
   }
 
   beerPromotion(): void {
@@ -487,6 +488,23 @@ export class AlchocolDrinksComponent implements OnInit {
         // this.rum.sort((a, b) => a.id - b.id);
 
         this.GinAndTonics.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+        element.price = originalPrice;
+      }
+    });
+  }
+
+  apetizingPromotion(): void {
+    this.Apetisani.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+
+    this.Apetisani.forEach((element) => {
+      if (element.promotionPrice) {
+        let originalPrice = element.price;
+        element.price = "0ден."
+
+        // this.rum.sort((a, b) => a.id - b.id);
+
+        this.Apetisani.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
 
         element.price = originalPrice;
       }
