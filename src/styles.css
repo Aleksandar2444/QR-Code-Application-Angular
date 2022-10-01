@@ -142,8 +142,8 @@ button {
   cursor: pointer;
   color: white;
   box-shadow: rgb(0 0 0 / 16%) 0px 1px 2px, rgb(129 126 135) 0px 0px 0px 2px;
-      margin-bottom: 33px;
-        margin-top: 18px;
+  margin-bottom: 33px;
+  margin-top: 18px;
 }
 
 .button_back2 {
@@ -167,7 +167,7 @@ button {
   color: #000000;
 }
 
-.on_promotion {
+/* .on_promotion {
   margin-right: 0px;
   font-size: 14px;
   font-family: "Mali", cursive;
@@ -178,6 +178,26 @@ button {
   transform: rotate(70deg);
   -ms-transform: rotate(70deg);
   animation: myAnim 2s ease 0s infinite normal none;
+} */
+
+.on_promotion {
+  padding: 6px 4px 15px 4px;
+  font-size: 11px;
+  background-color: #d82424;
+  color: white;
+  right: 20px;
+  top: -33px;
+  position: relative;
+}
+.on_promotion::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -30px;
+  border-left: 32px solid #d82424;
+  border-right: 31px solid #d82424;
+  border-bottom: 31px solid transparent;
 }
 
 .name_and_price_wrapper p {

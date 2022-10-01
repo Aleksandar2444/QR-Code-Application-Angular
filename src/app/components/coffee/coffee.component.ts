@@ -48,13 +48,11 @@ export class CoffeeComponent implements OnInit {
     promotionPrice?: string;
   }[] = drinksWithoutCoffeinDbJson;
 
-  constructor(
-    public translate: TranslateService
-  ) { }
+  constructor(public translate: TranslateService) {}
 
   ngOnInit(): void {
     if (localStorage.length >= 1) {
-      var test = localStorage.getItem("item_key");
+      var test = localStorage.getItem('item_key');
 
       if (test != null) {
         this.translate.use(test.toString());
@@ -62,46 +60,57 @@ export class CoffeeComponent implements OnInit {
     }
 
     //Coffee
-    this.coffee.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+    this.coffee.sort(
+      (a, b) =>
+        parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+    );
     this.coffee.forEach((element) => {
-
       if (element.promotionPrice) {
         let originalPrice = element.price;
-        element.price = "0ден."
+        element.price = '0ден.';
 
-        this.coffee.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+        this.coffee.sort(
+          (a, b) =>
+            parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+        );
 
         element.price = originalPrice;
       }
     });
-
-
 
     //Coffee With Milk
-    this.coffeeWithMilk.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+    this.coffeeWithMilk.sort(
+      (a, b) =>
+        parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+    );
     this.coffeeWithMilk.forEach((element) => {
-
       if (element.promotionPrice) {
         let originalPrice = element.price;
-        element.price = "0ден."
+        element.price = '0ден.';
 
-        this.coffeeWithMilk.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+        this.coffeeWithMilk.sort(
+          (a, b) =>
+            parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+        );
 
         element.price = originalPrice;
       }
     });
 
-
-
     //Drinks Without Coffein
-    this.drinksWithoutCoffein.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+    this.drinksWithoutCoffein.sort(
+      (a, b) =>
+        parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+    );
     this.drinksWithoutCoffein.forEach((element) => {
-
       if (element.promotionPrice) {
         let originalPrice = element.price;
-        element.price = "0ден."
+        element.price = '0ден.';
 
-        this.drinksWithoutCoffein.sort((a, b) => parseInt(a.price.split("д")[0]) - parseInt(b.price.split("д")[0]));
+        this.drinksWithoutCoffein.sort(
+          (a, b) =>
+            parseInt(a.price.split('д')[0]) - parseInt(b.price.split('д')[0])
+        );
 
         element.price = originalPrice;
       }
@@ -109,7 +118,6 @@ export class CoffeeComponent implements OnInit {
 
     // this.today.setDate(this.today.getDate() + 7);
     // this.today.setHours(1, 0, 0);
-
 
     //Weekend Agenda
     const today = new Date();
@@ -170,5 +178,4 @@ export class CoffeeComponent implements OnInit {
 
     // this.cocktailBool = false;
   }
-
 }
