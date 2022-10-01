@@ -92,6 +92,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   border-bottom: 1px solid #d4a872;
+  border-top: 1px solid #d4a872;
   margin: 0 5px;
 }
 
