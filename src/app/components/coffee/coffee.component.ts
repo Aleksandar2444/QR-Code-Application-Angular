@@ -48,7 +48,7 @@ export class CoffeeComponent implements OnInit {
     promotionPrice?: string;
   }[] = drinksWithoutCoffeinDbJson;
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
     if (localStorage.length >= 1) {
@@ -127,10 +127,11 @@ export class CoffeeComponent implements OnInit {
     const friday = new Date(today.setDate(fifth));
 
     const sixth = first + 5;
-    const saturday = new Date(today.setDate(sixth));
+    const saturday = new Date();
 
-    const seventh = first + 6;
-    const sunday = new Date(today.setDate(seventh));
+    const seventh = today;
+    const sunday = new Date();
+    sunday.setDate(this.today.getDate() + 1);
 
     // const eight = first - 1;
     const secondSunday = new Date();
