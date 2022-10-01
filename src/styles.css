@@ -183,7 +183,7 @@ button {
 .on_promotion {
   padding: 12px 4px 15px 4px;
   font-size: 11px;
-  background-color: #d82424;
+  background-color: #ed4141;
   color: white;
   right: 20px;
   top: -33px;
@@ -195,8 +195,8 @@ button {
   z-index: 2;
   left: 0;
   bottom: -30px;
-  border-left: 32px solid #d82424;
-  border-right: 31px solid #d82424;
+  border-left: 32px solid #ed4141;
+  border-right: 31px solid #ed4141;
   border-bottom: 31px solid transparent;
 }
 
