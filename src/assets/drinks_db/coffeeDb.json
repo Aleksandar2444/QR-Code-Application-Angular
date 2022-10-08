@@ -11,14 +11,14 @@
     "name": "Espresso Arrabica",
     "price": "100ден.",
     "description": "(100% Арабика за вистински љубители на кафе)",
-    "promotionPrice": "40ден."
+    "promotionPrice": ""
   },
   {
     "id": 3,
     "name": "Espresso Doppio",
     "price": "100ден.",
     "description": "(дупла доза на кафе, за побрзо будење и подобра концетрација)",
-    "promotionPrice": "40ден."
+    "promotionPrice": ""
   },
   {
     "id": 4,
