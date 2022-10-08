@@ -181,7 +181,7 @@ button {
   animation: myAnim 2s ease 0s infinite normal none;
 } */
 
-.on_promotion {
+/* .on_promotion {
   padding: 12px 4px 15px 4px;
   font-size: 11px;
   background-color: #ed4141;
@@ -199,6 +199,54 @@ button {
   border-left: 32px solid #ed4141;
   border-right: 31px solid #ed4141;
   border-bottom: 31px solid transparent;
+} */
+
+.on_promotion_wrapper {
+  position: relative;
+}
+.on_promotion {
+  position: absolute;
+  top: -42.1px;
+  right: 65px;
+}
+.on_promotion::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+  border-top: 10px solid #f8463f;
+}
+.on_promotion span {
+  display: block;
+  text-align: center;
+  background: #f8463f;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 90px;
+}
+.on_promotion span:before,
+.on_promotion span:after {
+  position: absolute;
+  content: "";
+}
+.on_promotion span:before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background: #f8463f;
+}
+.on_promotion span:after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #c02031;
 }
 
 .name_and_price_wrapper p {

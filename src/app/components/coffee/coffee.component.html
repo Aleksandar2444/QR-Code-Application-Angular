@@ -27,8 +27,8 @@
               "
               >{{ drink.price }}</strong
             >
-            <strong *ngIf="drink.promotionPrice">
-              <span class="on_promotion">Promotion</span>
+            <strong class="on_promotion_wrapper" *ngIf="drink.promotionPrice">
+              <span class="on_promotion"><span>Promotion</span></span>
               {{ drink.promotionPrice }}</strong
             >
           </p>
