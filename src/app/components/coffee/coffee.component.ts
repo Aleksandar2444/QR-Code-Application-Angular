@@ -116,7 +116,7 @@ export class CoffeeComponent implements OnInit {
       }
     });
 
-    // this.today.setDate(this.today.getDate() - 1);
+    // this.today.setDate(this.today.getDate() + 5);
     // this.today.setHours(22, 0, 0);
 
     //Weekend Agenda
@@ -148,7 +148,7 @@ export class CoffeeComponent implements OnInit {
       } else {
         this.cocktailBool = false;
       }
-    } else if (this.today.getDate() === saturday.getDate()) {
+    } else if (this.today.getDay() === 6) {
       if (this.today.getHours() > 4) {
         saturday.setHours(21, 0, 0);
         sunday.setHours(5, 0, 0);
