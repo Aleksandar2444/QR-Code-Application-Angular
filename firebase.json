@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "CoffeeIn",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
+}
