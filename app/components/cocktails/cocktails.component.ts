@@ -16,6 +16,7 @@ export class CocktailsComponent implements OnInit {
     promotionPrice?: string | undefined;
   }[] = cocktailsDbJson[0];
 
+
   public classicCocktails: {
     id: number;
     name: string;
